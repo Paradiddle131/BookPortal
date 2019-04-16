@@ -1,0 +1,165 @@
+* {
+    box-sizing:border-box
+    }
+    
+    h2 {
+    color:#FF4500;
+    margin-left:10%
+    important!
+    }
+    
+    .input-container {
+    display:flex;
+    width:100%;
+    margin-bottom:15px;
+    margin-top: 10px;
+    }
+    
+    .icon {
+    padding:10px;
+    background:#FF4500;
+    color:#fff;
+    min-width:50px;
+    text-align:center
+    }
+    
+    .input-field {
+    width:100%;
+    padding:10px;
+    outline:none;
+    color: black;  
+    margin-left:-5px;
+    }
+
+    .selected-box {
+    margin-left: 0px;
+
+    }
+
+    .input-field:focus {
+    border:2px solid #1e90ff
+    }
+    
+    .btn {
+    background-color:#FF4500;
+    color:#fff;
+    padding:15px 20px;
+    border:none;
+    cursor:pointer;
+    width:100%;
+    opacity:.9
+    }
+    
+    .btn:hover {
+    opacity:5
+    }
+    
+    .custom-select {
+    position:relative;
+    font-family:Arial;
+    margin:0 120px 0 0;
+    background:none;
+    border:none;
+    padding:inherit
+    }
+    
+    .custom-select select {
+    display:none
+    }
+    
+    .select-selected {
+    background-color:#FF4500
+    }
+    
+    .select-selected:after {
+    position:absolute;
+    content:"";
+    top:14px;
+    right:10px;
+    width:0;
+    height:0;
+    border:6px solid transparent;
+    border-color:#fff transparent transparent
+    }
+    
+    .select-selected.select-arrow-active:after {
+    border-color:transparent transparent #fff;
+    top:7px
+    }
+    
+    .select-items div,.select-selected {
+    color:#fff;
+    padding:8px 16px;
+    border:1px solid transparent;
+    position:relative;
+    top:-9px;
+    border-color:transparent transparent rgba(0,0,0,0.1);
+    cursor:pointer;
+    user-select:none
+    }
+    
+    .select-items {
+    position:absolute;
+    background-color:#988F8F;
+    top:28px;
+    left:0;
+    right:0;
+    z-index:99
+    }
+    
+    .select-hide {
+    display:none
+    }
+    
+    .select-items div:hover,.same-as-selected {
+    background-color:rgba(0,0,0,0.1)
+    }
+      
+    
+    .text-Area {
+    position:relative;
+    padding-bottom:10px;
+    margin-top: -3px;
+    color:black;
+    }
+    
+    .inline {
+    float:left
+    }
+    
+    .text-AreaRadius {
+    padding-bottom:10px
+    }
+    
+    .icon {
+    padding:10px;
+    background:#FF4500;
+    color:#fff;
+    min-width:50px;
+    text-align:center
+    }
+    
+    .input-email {
+    width:100%;
+    padding:10px;
+    outline:none;
+    color: black;
+    margin-left:-5px;
+    }
+    
+    .input-email:focus {
+    border:2px solid #1e90ff
+    }
+    
+    .material-icons {
+    padding:8px;
+    background:#FF4500;
+    color:#fff;
+    min-width:40px;
+    text-align:center;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    -moz-osx-font-smoothing:grayscale;
+    font-feature-settings:liga
+    }
+

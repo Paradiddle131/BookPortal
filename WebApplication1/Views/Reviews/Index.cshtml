@@ -1,0 +1,97 @@
+﻿
+@model IEnumerable<BookPortal.Models.Review>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+
+<div class="row">
+
+
+    @*<hr />
+
+    <div class="alert alert-success" role="alert">
+        <strong>
+            Number of Reviews: @Model.NumberOfReview
+        </strong>
+    </div>*@
+
+    <hr />
+
+
+    <div class="col-md-3">
+        
+       
+
+
+         @*@Html.Partial("_CategoryMenu",Model.Categories)*@
+
+        @foreach (var item in Model)
+        {
+            <p>@item.Categories</p>
+        }
+
+
+
+    </div>
+    <div class="col-md-9">
+
+        @foreach (var item in Model)
+        {
+  
+            if (item.Confirmation==true)
+            {
+                <div class="reviews_content">
+                    <div class="col-md-8 col-sm-8">
+                        <div class="post">
+                            <h2 class="post-title"><a href="blog-post.html">@item.BookName</a></h2>
+                            <p class="post-meta">
+                                <i class="fa fa-calendar-o first"></i> @item.AddingDate
+                                <i class="fa fa-user"></i> @item.BookWriter
+                                <i class="fa fa-comment"></i> <a href="#">@item.ReviewId</a>
+                            </p>
+                            <a href="blog-post.html" class="img-post">
+                                <img src="~/img/post1.png" alt="post 1" class="img-responsive">
+                            </a>
+                            <p>
+
+                                @if (@item.BookAnalysis.Length> 100)
+                                {
+                                    @(item.BookAnalysis.Substring(0, 95) + "...")
+                                }
+                                else
+                                {
+                                    @item.BookAnalysis
+                                    
+                                }
+
+                            </p>
+                            <a class="btn btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
+                        </div><!-- /.post -->
+                    </div>
+                </div>
+
+            }
+
+
+
+        }
+
+
+    </div>
+
+
+   
+
+</div>
+
+
+
+
+
+
+
+

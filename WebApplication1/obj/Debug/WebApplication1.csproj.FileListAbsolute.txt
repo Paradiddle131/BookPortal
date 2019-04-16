@@ -1,0 +1,142 @@
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Security.Claims.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Threading.Thread.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\System.Web.Webpages.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\System.Web.Webpages.xml
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.xml
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\toarslan\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Claims.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Threading.Thread.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Webpages.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Webpages.xml
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.xml
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Tolga\Desktop\Book Portal\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
