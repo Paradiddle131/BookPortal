@@ -9,7 +9,7 @@ namespace BookPortal.Models
     public class ReviewContext:DbContext
     {
 
-        public ReviewContext() : base("reviewDb")
+        public ReviewContext() : base("ReviewDb")
         {
             Database.SetInitializer(new ReviewInitializer());
         }

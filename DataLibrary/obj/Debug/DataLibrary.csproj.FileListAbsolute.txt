@@ -1,0 +1,8 @@
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\DataLibrary\bin\Debug\DataLibrary.dll
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\DataLibrary\bin\Debug\DataLibrary.pdb
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\DataLibrary\bin\Debug\Dapper.dll
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\DataLibrary\bin\Debug\Dapper.xml
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\DataLibrary\obj\Debug\DataLibrary.dll
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\DataLibrary\obj\Debug\DataLibrary.pdb
