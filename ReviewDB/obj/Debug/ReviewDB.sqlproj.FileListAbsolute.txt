@@ -1,0 +1,9 @@
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\ReviewDB\bin\Debug\ReviewDB.dacpac
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\ReviewDB\bin\Debug\ReviewDB.dll
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\ReviewDB\bin\Debug\ReviewDB.pdb
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\ReviewDB\obj\Debug\Model.xml
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\ReviewDB\obj\Debug\refactor.xml
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\ReviewDB\obj\Debug\postdeploy.sql
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\ReviewDB\obj\Debug\predeploy.sql
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\ReviewDB\obj\Debug\ReviewDB.dll
+D:\Downloads_D\BookPortal-master_4\BookPortal-master\ReviewDB\obj\Debug\ReviewDB.pdb

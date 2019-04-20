@@ -1,97 +1,71 @@
 ﻿
-@model IEnumerable<BookPortal.Models.Review>
+@model IEnumerable<DataLibrary.ModelsD.ReviewModel>
+@*@model IEnumerable<BookPortal.Models.Review>*@
 @{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 
 }
 
+<h2>View Reviews</h2>
+
+<table class="table">
+	<tr>
+		<th>
+			@Html.DisplayNameFor(model => model.Category)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.BookName)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.ReviewType)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.BookSubject)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.BookAnalysis)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.AuthorName)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.OtherBooks)
+		</th>
+		<th></th>
+	</tr>
+
+	@foreach (var item in Model)
+	{
+		<p> @item.AuthorName</p>
+		<p>@item.BookName</p>
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.Category)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.BookName)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.ReviewType)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.BookSubject)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.BookAnalysis)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.AuthorName)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.OtherBooks)
+			</td>
+		</tr>
+	}											   
+
+</table>
+												   
 
 
-<div class="row">
-
-
-    @*<hr />
-
-    <div class="alert alert-success" role="alert">
-        <strong>
-            Number of Reviews: @Model.NumberOfReview
-        </strong>
-    </div>*@
-
-    <hr />
-
-
-    <div class="col-md-3">
-        
-       
-
-
-         @*@Html.Partial("_CategoryMenu",Model.Categories)*@
-
-        @foreach (var item in Model)
-        {
-            <p>@item.Categories</p>
-        }
-
-
-
-    </div>
-    <div class="col-md-9">
-
-        @foreach (var item in Model)
-        {
-  
-            if (item.Confirmation==true)
-            {
-                <div class="reviews_content">
-                    <div class="col-md-8 col-sm-8">
-                        <div class="post">
-                            <h2 class="post-title"><a href="blog-post.html">@item.BookName</a></h2>
-                            <p class="post-meta">
-                                <i class="fa fa-calendar-o first"></i> @item.AddingDate
-                                <i class="fa fa-user"></i> @item.BookWriter
-                                <i class="fa fa-comment"></i> <a href="#">@item.ReviewId</a>
-                            </p>
-                            <a href="blog-post.html" class="img-post">
-                                <img src="~/img/post1.png" alt="post 1" class="img-responsive">
-                            </a>
-                            <p>
-
-                                @if (@item.BookAnalysis.Length> 100)
-                                {
-                                    @(item.BookAnalysis.Substring(0, 95) + "...")
-                                }
-                                else
-                                {
-                                    @item.BookAnalysis
-                                    
-                                }
-
-                            </p>
-                            <a class="btn btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
-                        </div><!-- /.post -->
-                    </div>
-                </div>
-
-            }
-
-
-
-        }
-
-
-    </div>
-
-
-   
-
-</div>
-
-
-
-
-
-
-
-
+												   

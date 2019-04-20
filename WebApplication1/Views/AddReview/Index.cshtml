@@ -1,86 +1,90 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿@model DataLibrary.ModelsD.ReviewModel
+	@{
+		ViewBag.Title = "Index";
+		Layout = "~/Views/Shared/_Layout.cshtml";
+	}
 
-<hr />
+	<hr />
 
-<div class="row">
-
-
-    <div class="col-md-12">
-
-        <div class="col-md-6">
-
-            <div class="input-container">
-                <select id="categorytype" class="input-field selected-box">
-                    <option value="0">Selecet Category</option>
-                    <option value="1">Fear</option>
-                    <option value="2">Adventure</option>
-                </select>
-            </div>
+	<div class="row">
 
 
-            <div class="input-container">
-                <i class="	glyphicon glyphicon-info-sign icon"></i>
-                <input class="input-field" type="text" id="bookname" placeholder="Book Name" name="bkname" style="margin-top: 1px;margin-bottom: -1px;">
-            </div>
+		<div class="col-md-12">
 
-            <div class="input-container">
-                <select id="reviewtype" class="input-field selected-box">
-                    <option value="0">Select Review Type</option>
-                    <option value="1">General Analysis</option>
-                    <option value="2">Character Analysis</option>                    <
-                </select>
-            </div>
+			<div class="col-md-6">
 
-            <div class="input-container">
-                <i class="fa fa-address-book-o icon"></i>
-                <input class="input-field" id="txtSubject" type="text" placeholder="Book Subject" name="succedname" />
-            </div>
-
-            <div class="text-Area ">
-                <textarea id="txtReview" name="subject" placeholder="Write your review." style="height:122px; width:100%;  border:3px solid #FF5819; border-radius: 4px;"></textarea>
-            </div>
-
-        </div>
+				<div class="input-container">
+					<select id="categorytype" class="input-field selected-box">
+						<option value="0">Selecet Category</option>
+						<option value="1">Fear</option>
+						<option value="2">Adventure</option>
+					</select>
+				</div>
 
 
-        <div class="col-md-6">
+				<div class="input-container">
+					<i class="	glyphicon glyphicon-info-sign icon"></i>
+					<input class="input-field" type="text" id="bookname" placeholder="Book Name" name="bkname" style="margin-top: 1px;margin-bottom: -1px;">
+				</div>
+
+				<div class="input-container">
+					<select id="reviewtype" class="input-field selected-box">
+						<option value="0">Select Review Type</option>
+						<option value="1">General Analysis</option>
+						<option value="2">Character Analysis</option>                    <
+					</select>
+				</div>
+
+				<div class="input-container">
+					<i class="fa fa-address-book-o icon"></i>
+					<input class="input-field" id="txtSubject" type="text" placeholder="Book Subject" name="succedname" />
+				</div>
+
+				<div class="text-Area ">
+					<textarea id="txtReview" name="subject" placeholder="Write your review." style="height:122px; width:100%;  border:3px solid #FF5819; border-radius: 4px;"></textarea>
+				</div>
+
+			</div>
 
 
-            <div class="input-container">
-                <i class="far fa-file-alt icon"></i>
-                <input class="input-field" type="text" id="writername" placeholder="Writer Name" name="email">
-            </div>
-
-            <div class="input-container">
-                <i class="far fa-clock icon"></i>
-                <input class="input-field" type="text" id="otherbook" placeholder="Other Books of Writer" name="schinterval">
-            </div>
-
-            <div class="col-md-12">
-
-                <div class="col-md-4">
-                    <button type="button" id="deleteform" class="btn-danger" onclick="" data-dismiss="" style="margin-right:-10px;">Delete Review</button>
-                </div>               
-                <div class="col-md-4">
-                    <button type="button" id="addform" class="btn-success" onclick="" data-dismiss="" style="">Add Review</button>
-                </div>
-            </div>
+			<div class="col-md-6">
 
 
-        </div>
+				<div class="input-container">
+					<i class="far fa-file-alt icon"></i>
+					<input class="input-field" type="text" id="writername" placeholder="Writer Name" name="email">
+				</div>
+
+				<div class="input-container">
+					<i class="far fa-clock icon"></i>
+					<input class="input-field" type="text" id="otherbook" placeholder="Other Books of Writer" name="schinterval">
+				</div>
+
+				<div class="col-md-12">
+
+					<div class="col-md-4">
+						<button type="button" id="deleteform" class="btn-danger" onclick="" data-dismiss="" style="margin-right:-10px;">Delete Review</button>
+					</div>
+					<div class="col-md-4">
+						<button type="submit" id="addform" class="btn-success" onclick="" data-dismiss="" style="">Add Review</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-10">
+				<input type="submit" value="Add" class="btn btn-default" />
+			</div>
+		</div>
+
+	</div>
+
+	<div>
+		@Html.ActionLink("Clear", "Index")
+	</div>
 
 
-    </div>
 
-</div>
-
-
-
-   
 
 
 
