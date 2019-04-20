@@ -12,3 +12,9 @@ If your localdb name is different from "MSSQLLocalDB", then you need to find you
 - Properties
 - Copy Connection string
 - Paste it between your "connectionStrings" tags located in Web.config file
+
+
+# MVC SQL Connection YouTube Video:
+
+[![MVC SQL Connection](http://i3.ytimg.com/vi/orLTPQGxxG8/maxresdefault.jpg)](https://youtu.be/orLTPQGxxG8)
+
