@@ -51,6 +51,8 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -95,6 +97,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ReviewSQL.mdf" />
+    <Content Include="App_Data\ReviewSQL_log.ldf">
+      <DependentUpon>ReviewSQL.mdf</DependentUpon>
+    </Content>
     <Content Include="css\addingReviewCss\form.css" />
     <Content Include="css\addingReviewCss\util.css" />
     <Content Include="css\bootstrap.css" />
@@ -142,6 +148,27 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <Content Include="ReviewADONET.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ReviewADONET.edmx</DependentUpon>
+      <LastGenOutput>ReviewADONET.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ReviewADONET.edmx.sql" />
+    <Content Include="ReviewADONET.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ReviewADONET.edmx</DependentUpon>
+      <LastGenOutput>ReviewADONET.cs</LastGenOutput>
+    </Content>
+    <Content Include="ReviewBook.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ReviewBook.edmx</DependentUpon>
+      <LastGenOutput>ReviewBook.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ReviewBook.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ReviewBook.edmx</DependentUpon>
+      <LastGenOutput>ReviewBook.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="css\fonts\font-awesome\fontawesome-webfontba72.eot" />
@@ -176,6 +203,20 @@
     <Content Include="css\fonts\pacifico\pacifico-webfont.ttf" />
     <Content Include="css\fonts\pacifico\pacifico-webfont.woff" />
     <Content Include="css\fonts\pacifico\pacifico-webfontd41d.eot" />
+    <EntityDeploy Include="ReviewADONET.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ReviewADONET.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ReviewADONET.edmx.diagram">
+      <DependentUpon>ReviewADONET.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="ReviewBook.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ReviewBook.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ReviewBook.edmx.diagram">
+      <DependentUpon>ReviewBook.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -191,6 +232,16 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="test.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>test.edmx</DependentUpon>
+      <LastGenOutput>test.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="test.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>test.edmx</DependentUpon>
+      <LastGenOutput>test.cs</LastGenOutput>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -208,6 +259,57 @@
     <Compile Include="Models\ReviewContext.cs" />
     <Compile Include="Models\ReviewInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Review.cs">
+      <DependentUpon>ReviewBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewADONET.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReviewADONET.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewADONET.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReviewADONET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewADONET.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReviewADONET.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewBook.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReviewBook.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewBook.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReviewBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewBook.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReviewBook.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="test.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>test.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>test.tt</DependentUpon>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>test.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="type.cs">
+      <DependentUpon>test.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config">
@@ -226,6 +328,13 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <EntityDeploy Include="test.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>test.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="test.edmx.diagram">
+      <DependentUpon>test.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -233,14 +342,15 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\DataLibrary\DataLibrary.csproj">
       <Project>{4ff7c050-c3ce-469e-a38e-8b8df798be25}</Project>
       <Name>DataLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

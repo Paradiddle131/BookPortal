@@ -1,5 +1,58 @@
 ﻿
 @model IEnumerable<DataLibrary.ModelsD.ReviewModel>
+
+<br /><br />
+@using (Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+	@Html.TextBox("searching")<input type="submit" value="Search" />
+}
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Category</th>
+			<th>Book Name</th>
+			<th>Review Type</th>
+			<th>Book Subject</th>
+			<th>Book Analysis</th>
+			<th>Author Name</th>
+			<th>Other Books</th>
+		</tr>
+	</thead>
+	<tbody>
+		@if (Model.Count() == 0)
+		{
+			<tr>
+				<td colspan="3" style="color:red">
+					No Match
+				</td>
+			</tr>
+		}
+		else
+		{
+			foreach (var item in Model)
+			{
+				<tr>
+					<td>@item.Category</td>
+					<td>@item.BookName</td>
+					<td>@item.ReviewType</td>
+					<td>@item.BookSubject</td>
+					<td>@item.BookAnalysis</td>
+					<td>@item.AuthorName</td>
+					<td>@item.OtherBooks</td>
+				</tr>
+			}
+		}
+	</tbody>
+</table>
+
+
+
+
+
+
+	@*
+		@model IEnumerable<DataLibrary.ModelsD.ReviewModel>
+*@
 @*@model IEnumerable<BookPortal.Models.Review>*@
 @{
 	ViewBag.Title = "Index";
@@ -37,8 +90,8 @@
 
 	@foreach (var item in Model)
 	{
-		<p> @item.AuthorName</p>
-		<p>@item.BookName</p>
+		@*<p> @item.AuthorName</p>
+			<p>@item.BookName</p>*@
 		<tr>
 			<td>
 				@Html.DisplayFor(modelItem => item.Category)
@@ -62,10 +115,8 @@
 				@Html.DisplayFor(modelItem => item.OtherBooks)
 			</td>
 		</tr>
-	}											   
+	}
 
 </table>
-												   
 
 
-												   
