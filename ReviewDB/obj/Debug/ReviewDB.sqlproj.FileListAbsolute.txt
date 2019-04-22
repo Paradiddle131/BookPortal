@@ -7,3 +7,12 @@ D:\Downloads_D\BookPortal-master_4\BookPortal-master\ReviewDB\obj\Debug\Model.xm
 D:\Downloads_D\BookPortal-master_4\BookPortal-master\ReviewDB\obj\Debug\refactor.xml
 D:\Downloads_D\BookPortal-master_4\BookPortal-master\ReviewDB\obj\Debug\postdeploy.sql
 D:\Downloads_D\BookPortal-master_4\BookPortal-master\ReviewDB\obj\Debug\predeploy.sql
+D:\PROJECTS\ASP.NET MVC\BookPortal\ReviewDB\bin\Debug\ReviewDB.dacpac
+D:\PROJECTS\ASP.NET MVC\BookPortal\ReviewDB\bin\Debug\ReviewDB.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\ReviewDB\bin\Debug\ReviewDB.pdb
+D:\PROJECTS\ASP.NET MVC\BookPortal\ReviewDB\obj\Debug\ReviewDB.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\ReviewDB\obj\Debug\ReviewDB.pdb
+D:\PROJECTS\ASP.NET MVC\BookPortal\ReviewDB\obj\Debug\Model.xml
+D:\PROJECTS\ASP.NET MVC\BookPortal\ReviewDB\obj\Debug\refactor.xml
+D:\PROJECTS\ASP.NET MVC\BookPortal\ReviewDB\obj\Debug\postdeploy.sql
+D:\PROJECTS\ASP.NET MVC\BookPortal\ReviewDB\obj\Debug\predeploy.sql
