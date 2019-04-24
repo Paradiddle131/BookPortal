@@ -99,6 +99,7 @@
   <ItemGroup>
     <Content Include="css\addingReviewCss\form.css" />
     <Content Include="css\addingReviewCss\util.css" />
+    <Content Include="css\addingReviewCss\webForm.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\fonts\font-awesome\fontawesome-webfontba72.svg" />
@@ -122,17 +123,19 @@
     <Content Include="img\client-4.png" />
     <Content Include="img\client-5.png" />
     <Content Include="img\client-6.png" />
+    <Content Include="img\client-7.png" />
     <Content Include="img\monster.png" />
-    <Content Include="img\portfolio_1.png" />
-    <Content Include="img\portfolio_2.png" />
-    <Content Include="img\portfolio_3.png" />
-    <Content Include="img\portfolio_4.png" />
-    <Content Include="img\portfolio_5.png" />
-    <Content Include="img\portfolio_6.png" />
+    <Content Include="img\book_archive_1.png" />
+    <Content Include="img\book_archive_2.png" />
+    <Content Include="img\book_archive_3.png" />
+    <Content Include="img\book_archive_4.png" />
+    <Content Include="img\book_archive_5.png" />
+    <Content Include="img\book_archive_6.png" />
     <Content Include="img\post1.png" />
     <Content Include="img\post2.png" />
     <Content Include="img\post3.png" />
     <Content Include="img\section-bg.png" />
+    <Content Include="img\slide\slide4.png" />
     <Content Include="img\slide\slide1.png" />
     <Content Include="img\slide\slide2.png" />
     <Content Include="img\slide\slide3.png" />

@@ -48,17 +48,17 @@ $(function() {
         }
     );
 
-    $(".link-portfolio").hover(
+    $(".link-book_archive").hover(
         function() {
             var opac = 1;
             if (bowser.msie && bowser.version <= 8) {
                 opac = 0.8
             }
-            $(this).children('.overlay-portfolio').animate({
+            $(this).children('.overlay-book_archive').animate({
                 opacity: opac
             }, 500);
         }, function() {
-            $(this).children('.overlay-portfolio').animate({
+            $(this).children('.overlay-book_archive').animate({
                 opacity: 0
             }, 500);
         }

@@ -147,7 +147,7 @@ blockquote {
 
 .navbar-inverse {
     background-color: #bc451a;
-    border-color: #1f61cc;
+    border-color: #bc451a;
 }
 
     .navbar-inverse .navbar-brand {
@@ -209,19 +209,19 @@ blockquote {
         color: #fff;
     }
 
-.link-portfolio {
+.link-book_archive {
     overflow: hidden;
     display: block;
     position: relative;
     margin-bottom: 30px;
 }
 
-    .link-portfolio img {
+    .link-book_archive img {
         display: block;
         position: relative;
     }
 
-    .link-portfolio .overlay-portfolio {
+    .link-book_archive .overlay-book_archive {
         background: rgba(0, 0, 0, 0.71);
         padding: 25px;
         position: absolute;
@@ -235,7 +235,7 @@ blockquote {
         filter: alpha(opacity=0);
     }
 
-        .link-portfolio .overlay-portfolio h3 {
+        .link-book_archive .overlay-book_archive h3 {
             font-size: 14px;
             font-family: 'open_sansbold';
             margin: 0 0 20px 0;
@@ -584,7 +584,7 @@ div.list-posts {
 }
 
 .section-colored {
-    background-color: #ECF0F1;
+    background-color: #ffffff;
 }
 
     .section-colored.home {
