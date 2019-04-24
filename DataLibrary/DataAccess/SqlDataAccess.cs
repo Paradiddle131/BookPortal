@@ -1,18 +1,15 @@
-﻿using System;
+﻿using Dapper;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dapper;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 
 namespace DataLibrary.DataAccess
 {
 	public static class SqlDataAccess
 	{
-		public static string GetConnectionString(string connectionName = "ReviewDB")
+		public static string GetConnectionString(string connectionName = "RevDBEntities2")
 		{
 			return ConfigurationManager.ConnectionStrings[connectionName].ConnectionString;
 		}

@@ -51,6 +51,8 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -142,6 +144,16 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <Content Include="RevDB2.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RevDB2.edmx</DependentUpon>
+      <LastGenOutput>RevDB2.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="RevDB2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RevDB2.edmx</DependentUpon>
+      <LastGenOutput>RevDB2.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="css\fonts\font-awesome\fontawesome-webfontba72.eot" />
@@ -176,6 +188,13 @@
     <Content Include="css\fonts\pacifico\pacifico-webfont.ttf" />
     <Content Include="css\fonts\pacifico\pacifico-webfont.woff" />
     <Content Include="css\fonts\pacifico\pacifico-webfontd41d.eot" />
+    <EntityDeploy Include="RevDB2.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RevDB2.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="RevDB2.edmx.diagram">
+      <DependentUpon>RevDB2.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -203,11 +222,28 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Categories.cs" />
-    <Compile Include="Models\Review.cs" />
     <Compile Include="Models\ReviewCategory.cs" />
     <Compile Include="Models\ReviewContext.cs" />
     <Compile Include="Models\ReviewInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RevDB2.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RevDB2.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RevDB2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RevDB2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RevDB2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RevDB2.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Review.cs">
+      <DependentUpon>RevDB2.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config">
@@ -241,6 +277,9 @@
       <Project>{4ff7c050-c3ce-469e-a38e-8b8df798be25}</Project>
       <Name>DataLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

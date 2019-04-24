@@ -294,82 +294,85 @@ D:\Downloads_D\BookPortal-master_4\BookPortal-master\WebApplication1\bin\roslyn\
 D:\Downloads_D\BookPortal-master_4\BookPortal-master\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
 D:\Downloads_D\BookPortal-master_4\BookPortal-master\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
 D:\Downloads_D\BookPortal-master_4\BookPortal-master\WebApplication1\bin\roslyn\System.ValueTuple.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\BookPortal.dll.config
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\BookPortal.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\BookPortal.pdb
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\csc.exe
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\csc.exe.config
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\csc.rsp
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\csi.exe
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\csi.exe.config
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\csi.rsp
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.AppContext.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Console.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Diagnostics.Process.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.IO.Compression.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.IO.Pipes.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Security.Claims.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Threading.Thread.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.ValueTuple.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Xml.XPath.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\vbc.exe
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\vbc.exe.config
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\vbc.rsp
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\VBCSCompiler.exe
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\DataLibrary.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\EntityFramework.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\EntityFramework.SqlServer.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\System.Web.Helpers.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\System.Web.Mvc.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\System.Web.Razor.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\System.Web.Webpages.Deployment.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\System.Web.Webpages.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\System.Web.Webpages.Razor.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\Dapper.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\DataLibrary.pdb
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\EntityFramework.xml
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\EntityFramework.SqlServer.xml
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\System.Web.Razor.xml
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\System.Web.Webpages.xml
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\System.Web.Webpages.Deployment.xml
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\System.Web.Webpages.Razor.xml
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\System.Web.Helpers.xml
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\System.Web.Mvc.xml
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\Dapper.xml
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.csprojAssemblyReference.cache
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.csproj.CoreCompileInputs.cache
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.csproj.CopyComplete
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.dll
-C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.pdb
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\BookPortal.dll.config
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\BookPortal.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\BookPortal.pdb
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\csc.exe
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\csc.exe.config
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\csc.rsp
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\csi.exe
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\csi.exe.config
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\csi.rsp
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.AppContext.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Console.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Diagnostics.Process.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.IO.Compression.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.IO.Pipes.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Security.AccessControl.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Security.Claims.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Security.Principal.Windows.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Threading.Thread.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.ValueTuple.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\vbc.exe
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\vbc.exe.config
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\vbc.rsp
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\DataLibrary.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\EntityFramework.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Helpers.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Mvc.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Razor.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Webpages.Deployment.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Webpages.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Webpages.Razor.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\Dapper.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\DataLibrary.pdb
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\EntityFramework.xml
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Razor.xml
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Webpages.xml
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Webpages.Deployment.xml
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Webpages.Razor.xml
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Helpers.xml
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Mvc.xml
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\Dapper.xml
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\obj\Debug\BookPortal.csprojAssemblyReference.cache
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\obj\Debug\BookPortal.csproj.CoreCompileInputs.cache
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\obj\Debug\BookPortal.csproj.CopyComplete
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\obj\Debug\BookPortal.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\obj\Debug\BookPortal.pdb
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\DataLibrary.dll.config
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\ReviewSQL.mdf
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\ReviewSQL_log.ldf

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RevDBModelStoreContainer" CdmEntityContainer="RevDBEntities">
+    <EntitySetMapping Name="Reviews">
+      <EntityTypeMapping TypeName="RevDBModel.Review">
+        <MappingFragment StoreEntitySet="Review">
+          <ScalarProperty Name="ReviewId" ColumnName="ReviewId" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="BookName" ColumnName="BookName" />
+          <ScalarProperty Name="ReviewType" ColumnName="ReviewType" />
+          <ScalarProperty Name="BookSubject" ColumnName="BookSubject" />
+          <ScalarProperty Name="BookAnalysis" ColumnName="BookAnalysis" />
+          <ScalarProperty Name="AuthorName" ColumnName="AuthorName" />
+          <ScalarProperty Name="OtherBooks" ColumnName="OtherBooks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
