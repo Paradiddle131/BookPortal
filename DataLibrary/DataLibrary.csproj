@@ -70,93 +70,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessLogic\ReviewProcessor.cs" />
-    <Compile Include="DataAccess\SqlDataAccess.cs" />
-    <Compile Include="ModelsD\RevDB.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RevDB.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelsD\RevDB.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RevDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelsD\RevDB.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RevDB.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="ModelsD\RevDB2.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RevDB2.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelsD\RevDB2.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RevDB2.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelsD\RevDB2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RevDB2.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="ModelsD\Review.cs">
-      <DependentUpon>RevDB2.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelsD\ReviewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.Config" />
-    <EntityDeploy Include="ModelsD\RevDB.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>RevDB.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="ModelsD\RevDB.edmx.diagram">
-      <DependentUpon>RevDB.edmx</DependentUpon>
-    </None>
-    <EntityDeploy Include="ModelsD\RevDB2.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>RevDB2.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="ModelsD\RevDB2.edmx.diagram">
-      <DependentUpon>RevDB2.edmx</DependentUpon>
-    </None>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ModelsD\RevDB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RevDB.edmx</DependentUpon>
-      <LastGenOutput>RevDB.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ModelsD\RevDB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RevDB.edmx</DependentUpon>
-      <LastGenOutput>RevDB.cs</LastGenOutput>
-    </Content>
-    <Content Include="ModelsD\RevDB2.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RevDB2.edmx</DependentUpon>
-      <LastGenOutput>RevDB2.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ModelsD\RevDB2.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RevDB2.edmx</DependentUpon>
-      <LastGenOutput>RevDB2.cs</LastGenOutput>
-    </Content>
-    <Content Include="ReviewSQL.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ReviewSQL_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>ReviewSQL.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -169,6 +86,11 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BusinessLogic\" />
+    <Folder Include="DataAccess\" />
+    <Folder Include="ModelsD\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

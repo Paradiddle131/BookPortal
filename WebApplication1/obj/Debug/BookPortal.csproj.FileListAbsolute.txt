@@ -345,7 +345,6 @@ D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\vbc.exe.config
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\vbc.rsp
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\VBCSCompiler.exe
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
-D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\DataLibrary.dll
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\EntityFramework.dll
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\EntityFramework.SqlServer.dll
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -356,8 +355,6 @@ D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Razor.dll
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Webpages.Deployment.dll
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Webpages.dll
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Webpages.Razor.dll
-D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\Dapper.dll
-D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\DataLibrary.pdb
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\EntityFramework.xml
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\EntityFramework.SqlServer.xml
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Razor.xml
@@ -367,15 +364,10 @@ D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Webpages.Razor
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Helpers.xml
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Web.Mvc.xml
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\Dapper.xml
-D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\obj\Debug\BookPortal.csprojAssemblyReference.cache
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\obj\Debug\BookPortal.csproj.CoreCompileInputs.cache
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\obj\Debug\BookPortal.csproj.CopyComplete
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\obj\Debug\BookPortal.dll
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\obj\Debug\BookPortal.pdb
-D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\DataLibrary.dll.config
-D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\ReviewSQL.mdf
-D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\ReviewSQL_log.ldf
 C:\Users\toarslan\Desktop\BookPortal-master\BookPortal-master\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\toarslan\Desktop\BookPortal-master\BookPortal-master\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\toarslan\Desktop\BookPortal-master\BookPortal-master\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll

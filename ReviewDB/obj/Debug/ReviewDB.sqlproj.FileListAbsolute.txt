@@ -16,3 +16,4 @@ D:\PROJECTS\ASP.NET MVC\BookPortal\ReviewDB\obj\Debug\Model.xml
 D:\PROJECTS\ASP.NET MVC\BookPortal\ReviewDB\obj\Debug\refactor.xml
 D:\PROJECTS\ASP.NET MVC\BookPortal\ReviewDB\obj\Debug\postdeploy.sql
 D:\PROJECTS\ASP.NET MVC\BookPortal\ReviewDB\obj\Debug\predeploy.sql
+D:\PROJECTS\ASP.NET MVC\BookPortal\ReviewDB\obj\Debug\ReviewDB.sqlprojAssemblyReference.cache

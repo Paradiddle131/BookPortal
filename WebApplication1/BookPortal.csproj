@@ -147,15 +147,15 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
-    <Content Include="RevDB2.Context.tt">
+    <Content Include="Models\RevModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RevDB2.edmx</DependentUpon>
-      <LastGenOutput>RevDB2.Context.cs</LastGenOutput>
+      <DependentUpon>RevModel.edmx</DependentUpon>
+      <LastGenOutput>RevModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="RevDB2.tt">
+    <Content Include="Models\RevModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RevDB2.edmx</DependentUpon>
-      <LastGenOutput>RevDB2.cs</LastGenOutput>
+      <DependentUpon>RevModel.edmx</DependentUpon>
+      <LastGenOutput>RevModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -191,12 +191,12 @@
     <Content Include="css\fonts\pacifico\pacifico-webfont.ttf" />
     <Content Include="css\fonts\pacifico\pacifico-webfont.woff" />
     <Content Include="css\fonts\pacifico\pacifico-webfontd41d.eot" />
-    <EntityDeploy Include="RevDB2.edmx">
+    <EntityDeploy Include="Models\RevModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>RevDB2.Designer.cs</LastGenOutput>
+      <LastGenOutput>RevModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="RevDB2.edmx.diagram">
-      <DependentUpon>RevDB2.edmx</DependentUpon>
+    <Content Include="Models\RevModel.edmx.diagram">
+      <DependentUpon>RevModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -217,36 +217,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AddReviewController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ReviewsController.cs" />
+    <Compile Include="Controllers\ReviewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Categories.cs" />
-    <Compile Include="Models\ReviewCategory.cs" />
-    <Compile Include="Models\ReviewContext.cs" />
-    <Compile Include="Models\ReviewInitializer.cs" />
+    <Compile Include="Models\Review.cs">
+      <DependentUpon>RevModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RevModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RevModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RevModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RevModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RevModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RevModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RevDB2.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RevDB2.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="RevDB2.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RevDB2.tt</DependentUpon>
-    </Compile>
-    <Compile Include="RevDB2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RevDB2.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Review.cs">
-      <DependentUpon>RevDB2.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config">
@@ -260,11 +255,15 @@
     <Content Include="Views\Shared\_Carousel.cshtml" />
     <Content Include="Views\Shared\_RecentProjects.cshtml" />
     <Content Include="Views\AddReview\Index.cshtml" />
-    <Content Include="Views\Reviews\Index.cshtml" />
     <Content Include="Views\Shared\_CategoryMenu.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Views\Review\Create.cshtml" />
+    <Content Include="Views\Review\Delete.cshtml" />
+    <Content Include="Views\Review\Details.cshtml" />
+    <Content Include="Views\Review\Edit.cshtml" />
+    <Content Include="Views\Review\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -274,12 +273,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DataLibrary\DataLibrary.csproj">
-      <Project>{4ff7c050-c3ce-469e-a38e-8b8df798be25}</Project>
-      <Name>DataLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

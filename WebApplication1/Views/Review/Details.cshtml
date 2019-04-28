@@ -1,0 +1,75 @@
+﻿@model BookPortal.Models.Review
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Review</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReviewType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReviewType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookSubject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookSubject)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookAnalysis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookAnalysis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuthorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuthorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherBooks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherBooks)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
