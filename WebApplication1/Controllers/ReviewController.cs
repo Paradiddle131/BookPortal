@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Dynamic;
 using System.Net;
 using System.Web.Mvc;
 
@@ -23,12 +24,48 @@ namespace BookPortal.Controllers
 			return View(db.Reviews.ToList());
 			//return View(reviews.ToList());
 		}
+
+		[HttpGet]
+		public ActionResult SearchIndex(int page = 1, string sort = "BookName", string sortdir = "asc", string search = "")
+		{
+			int pageSize = 10;
+			if (page < 1)
+			{
+				page = 1;
+			}
+
+			int skip = (page * pageSize) - pageSize;
+			List<Review> data = GetReviews(search, sort, sortdir, skip, pageSize, out int totalRecord);
+			ViewBag.TotalRows = totalRecord;
+			return View(data);
+		}
+
+
 		[HttpPost]
 		public ActionResult Index(string bookName, string authorName, string category, Review rev)
 		{
 			IEnumerable<Review> reviews = db.Reviews.ToList().Where(r => r.BookName.StartsWith(bookName) && r.AuthorName.StartsWith(authorName) && r.Category.StartsWith(category));
 			return View(reviews);
 		}
+
+		public List<Review> GetReviews(string search, string sort, string sortdir, int skip, int pageSize, out int totalRecord)
+		{
+			IQueryable<Review> v = (from a in db.Reviews
+									where
+									   a.BookName.Contains(search) ||
+									   a.AuthorName.Contains(search) ||
+									   a.Category.Contains(search)
+									select a
+					 );
+			totalRecord = v.Count();
+			v = v.OrderBy(sort + " " + sortdir);
+			if (pageSize > 0)
+			{
+				v = v.Skip(skip).Take(pageSize);
+			}
+			return v.ToList();
+		}
+
 
 		// GET: Review/Details/5
 		public ActionResult Details(int? id)

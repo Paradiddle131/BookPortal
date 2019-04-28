@@ -614,3 +614,5 @@ C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.csp
 C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.csproj.CopyComplete
 C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.dll
 C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.pdb
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Linq.Dynamic.dll
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\obj\Debug\BookPortal.csprojAssemblyReference.cache

@@ -58,18 +58,19 @@
                 <a class="navbar-brand" href="/">Book Portal</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav navbar-right">
 					@*<li class="active"><a href="/">Home</a></li>
-		<li>@Html.ActionLink("Add Review", "Index", "AddReview")</li>
-		<li><a href="/Reviews">Reviews</a></li>
-		@*<li><a href="/AddReview">Add Review</a></li>
-		<li><a href="/Contact">Contact</a></li>*@
+			<li>@Html.ActionLink("Add Review", "Index", "AddReview")</li>
+			<li><a href="/Reviews">Reviews</a></li>
+			@*<li><a href="/AddReview">Add Review</a></li>
+			<li><a href="/Contact">Contact</a></li>*@
 					<li>@Html.ActionLink("Home", "Index", "Home")</li>
 					<li>@Html.ActionLink("Reviews", "Index", "Review")</li>
 					<li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+					<li>@Html.ActionLink("Search", "SearchIndex", "Review")</li>
 				</ul>
-            </div><!-- /.navbar-collapse -->
+			</div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav>
     

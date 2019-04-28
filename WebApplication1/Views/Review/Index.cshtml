@@ -8,7 +8,7 @@
 <h2>Reviews</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+	@Html.ActionLink("Create New", "Create")
 </p>
 
 <form id="formSearch" method="post">
@@ -26,65 +26,65 @@
 		<div class="col-md-2">Category: </div>
 		<div class="col-md-2"><input type="text" value="@ViewBag.Category" id="category" name="category" /></div>
 		<div class="col-md-1">
-	</div>
+		</div>
 </form>
 
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Category)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BookName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ReviewType)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BookSubject)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BookAnalysis)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AuthorName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.OtherBooks)
-        </th>
-        <th></th>
-    </tr>
+	<tr>
+		<th>
+			@Html.DisplayNameFor(model => model.Category)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.BookName)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.ReviewType)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.BookSubject)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.BookAnalysis)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.AuthorName)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.OtherBooks)
+		</th>
+		<th></th>
+	</tr>
 
-@foreach (var item in Model)
-{
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BookName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ReviewType)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BookSubject)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BookAnalysis)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AuthorName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.OtherBooks)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.ReviewId }) |
-            @Html.ActionLink("Details", "Details", new { id = item.ReviewId }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.ReviewId })
-        </td>
-    </tr>
-}
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.Category)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.BookName)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.ReviewType)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.BookSubject)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.BookAnalysis)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.AuthorName)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.OtherBooks)
+			</td>
+			<td>
+				@Html.ActionLink("Edit", "Edit", new { id = item.ReviewId }) |
+				@Html.ActionLink("Details", "Details", new { id = item.ReviewId }) |
+				@Html.ActionLink("Delete", "Delete", new { id = item.ReviewId })
+			</td>
+		</tr>
+	}
 
 </table>
