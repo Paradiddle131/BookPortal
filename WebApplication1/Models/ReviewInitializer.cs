@@ -1,4 +1,4 @@
-﻿using DataLibrary.ModelsD;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 
@@ -9,10 +9,10 @@ namespace BookPortal.Models
 		protected override void Seed(ReviewContext context)
 		{
 			List<Categories> categories = new List<Categories>()
-			{
-				new Categories(){CategoryName="Fear"},
-				new Categories(){CategoryName="Adventure"}
-			};
+				{
+					new Categories(){CategoryName="Horror"},
+					new Categories(){CategoryName="Adventure"}
+				};
 
 			foreach (Categories item in categories)
 			{
@@ -29,14 +29,14 @@ namespace BookPortal.Models
 			//};
 
 			//DataLibrary.RevivewModel
-			List<ReviewModel> reviews = new List<ReviewModel>()
-			{
-				new ReviewModel() { BookName="Jules Verne" , BookSubject="life of jules verne", AuthorName="seyfettin", BookAnalysis="güzel", OtherBooks="kasagı", ReviewType="general"},
-				new ReviewModel() { BookName="sol ayağım" , BookSubject="life of jules verne", AuthorName="raci", BookAnalysis="kötü", OtherBooks="kasagı", ReviewType="character"},
-				new ReviewModel() { BookName="beyaz diş" , BookSubject="life of jules verne", AuthorName="mehmet", BookAnalysis="orta", OtherBooks="kasagı", ReviewType="general"}
-			};
+			List<Review> reviews = new List<Review>()
+				{
+					new Review() { BookName="Jules Verne" , BookSubject="life of jules verne", AuthorName="seyfettin", BookAnalysis="güzel", OtherBooks="kasagı", ReviewType="general", DateAdded=Convert.ToDateTime("2019-01-01")},
+					new Review() { BookName="sol ayağım" , BookSubject="life of jules verne", AuthorName="raci", BookAnalysis="kötü", OtherBooks="kasagı", ReviewType="character", DateAdded=Convert.ToDateTime("2019-01-02")},
+					new Review() { BookName="beyaz diş" , BookSubject="life of jules verne", AuthorName="mehmet", BookAnalysis="orta", OtherBooks="kasagı", ReviewType="general", DateAdded=Convert.ToDateTime("2019-01-03")}
+				};
 
-			foreach (ReviewModel item in reviews)
+			foreach (Review item in reviews)
 			{
 				context.Reviews.Add(item);
 			}
@@ -47,3 +47,35 @@ namespace BookPortal.Models
 		}
 	}
 }
+
+
+/*
+	public static void Initialize(ReviewContext db)
+	{
+		//db.Database.EnsureCreated();
+
+		InitializeReviews
+	}
+
+	public static void InitializeReviews(ReviewContext db)
+	{
+		//db.Database.EnsureCreated();
+
+		if (db.Reviews.Any())
+		{
+			return;
+		}
+
+		InitialCategory(db);
+	}
+
+	private static void InitialCategory(ReviewContext db)
+	{
+		if (db.Reviews.Any())
+		{
+			return;
+		}
+
+		string category;
+	}
+	 */

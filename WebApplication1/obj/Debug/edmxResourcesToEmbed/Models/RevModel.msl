@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Reviews">
       <EntityTypeMapping TypeName="BookPortalDBModel.Review">
         <MappingFragment StoreEntitySet="Review">
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
           <ScalarProperty Name="ReviewId" ColumnName="ReviewId" />
           <ScalarProperty Name="Category" ColumnName="Category" />
           <ScalarProperty Name="BookName" ColumnName="BookName" />

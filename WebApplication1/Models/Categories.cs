@@ -1,5 +1,4 @@
-﻿using DataLibrary.ModelsD;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace BookPortal.Models
@@ -11,6 +10,6 @@ namespace BookPortal.Models
 		public string CategoryName { get; set; }
 
 		//public List<Review> Reviews { get; set; }
-		public List<ReviewModel> Reviews { get; set; }
+		public List<Review> Reviews { get; set; }
 	}
 }

@@ -5,13 +5,14 @@
       <PropertyRef Name="ReviewId" />
     </Key>
     <Property Name="ReviewId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Category" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
-    <Property Name="BookName" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
-    <Property Name="ReviewType" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
-    <Property Name="BookSubject" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="Category" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="BookName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="ReviewType" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="BookSubject" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
     <Property Name="BookAnalysis" Type="String" MaxLength="999" FixedLength="true" Unicode="true" />
-    <Property Name="AuthorName" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
-    <Property Name="OtherBooks" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="AuthorName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="OtherBooks" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="DateAdded" Type="DateTime" Precision="0" />
   </EntityType>
   <EntityContainer Name="RevDBEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Reviews" EntityType="Self.Review" />

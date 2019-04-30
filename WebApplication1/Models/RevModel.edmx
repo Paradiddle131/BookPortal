@@ -4,25 +4,25 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="BookPortalDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="BookPortalDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Review">
           <Key>
             <PropertyRef Name="ReviewId" />
           </Key>
           <Property Name="ReviewId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Category" Type="nchar" MaxLength="30" />
-          <Property Name="BookName" Type="nchar" MaxLength="30" />
-          <Property Name="ReviewType" Type="nchar" MaxLength="30" />
-          <Property Name="BookSubject" Type="nchar" MaxLength="30" />
+          <Property Name="Category" Type="nchar" MaxLength="50" />
+          <Property Name="BookName" Type="nchar" MaxLength="50" />
+          <Property Name="ReviewType" Type="nchar" MaxLength="50" />
+          <Property Name="BookSubject" Type="nchar" MaxLength="50" />
           <Property Name="BookAnalysis" Type="nchar" MaxLength="999" />
-          <Property Name="AuthorName" Type="nchar" MaxLength="30" />
-          <Property Name="OtherBooks" Type="nchar" MaxLength="30" />
+          <Property Name="AuthorName" Type="nchar" MaxLength="50" />
+          <Property Name="OtherBooks" Type="nchar" MaxLength="50" />
+          <Property Name="DateAdded" Type="date" />
         </EntityType>
         <EntityContainer Name="BookPortalDBModelStoreContainer">
           <EntitySet Name="Review" EntityType="Self.Review" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="BookPortalDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -31,13 +31,14 @@
             <PropertyRef Name="ReviewId" />
           </Key>
           <Property Name="ReviewId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Category" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
-          <Property Name="BookName" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
-          <Property Name="ReviewType" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
-          <Property Name="BookSubject" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="Category" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="BookName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="ReviewType" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="BookSubject" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
           <Property Name="BookAnalysis" Type="String" MaxLength="999" FixedLength="true" Unicode="true" />
-          <Property Name="AuthorName" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
-          <Property Name="OtherBooks" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="AuthorName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="OtherBooks" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="DateAdded" Type="DateTime" Precision="0" />
         </EntityType>
         <EntityContainer Name="RevDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Reviews" EntityType="Self.Review" />
@@ -51,6 +52,7 @@
           <EntitySetMapping Name="Reviews">
             <EntityTypeMapping TypeName="BookPortalDBModel.Review">
               <MappingFragment StoreEntitySet="Review">
+                <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
                 <ScalarProperty Name="ReviewId" ColumnName="ReviewId" />
                 <ScalarProperty Name="Category" ColumnName="Category" />
                 <ScalarProperty Name="BookName" ColumnName="BookName" />

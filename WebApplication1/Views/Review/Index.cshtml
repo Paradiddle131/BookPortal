@@ -52,6 +52,9 @@
 		<th>
 			@Html.DisplayNameFor(model => model.OtherBooks)
 		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.DateAdded)
+		</th>
 		<th></th>
 	</tr>
 
@@ -78,6 +81,9 @@
 			</td>
 			<td>
 				@Html.DisplayFor(modelItem => item.OtherBooks)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.DateAdded)
 			</td>
 			<td>
 				@Html.ActionLink("Edit", "Edit", new { id = item.ReviewId }) |

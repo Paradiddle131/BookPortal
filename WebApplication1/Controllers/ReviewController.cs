@@ -93,7 +93,7 @@ namespace BookPortal.Controllers
 		// more details see https://go.microsoft.com/fwlink/?LinkId=317598.
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Create([Bind(Include = "ReviewId,Category,BookName,ReviewType,BookSubject,BookAnalysis,AuthorName,OtherBooks")] Review review)
+		public ActionResult Create([Bind(Include = "ReviewId,Category,BookName,ReviewType,BookSubject,BookAnalysis,AuthorName,OtherBooks,DateCreated")] Review review)
 		{
 			if (ModelState.IsValid)
 			{
@@ -125,7 +125,7 @@ namespace BookPortal.Controllers
 		// more details see https://go.microsoft.com/fwlink/?LinkId=317598.
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Edit([Bind(Include = "ReviewId,Category,BookName,ReviewType,BookSubject,BookAnalysis,AuthorName,OtherBooks")] Review review)
+		public ActionResult Edit([Bind(Include = "ReviewId,Category,BookName,ReviewType,BookSubject,BookAnalysis,AuthorName,OtherBooks,DateCreated")] Review review)
 		{
 			if (ModelState.IsValid)
 			{

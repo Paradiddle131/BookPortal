@@ -1,8 +1,8 @@
 ﻿@model BookPortal.Models.Review
 
 @{
-    ViewBag.Title = "Details";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "Details";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Details</h2>
@@ -65,6 +65,14 @@
 
         <dd>
             @Html.DisplayFor(model => model.OtherBooks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateAdded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateAdded)
         </dd>
 
     </dl>
