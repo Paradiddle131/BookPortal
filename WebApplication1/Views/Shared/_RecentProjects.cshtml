@@ -8,11 +8,11 @@
                 <a href="book_archive-item.html" class="link-book_archive">
                     <div class="overlay-book_archive">
                         <h3>Science Fiction Book Reviews</h3>
-                        <small class="text-muted" onclick="@("window.location.href='" + @Url.Action("CategoryScienceFiction", "Home") + "'")">
+                        <small class="text-muted">
                             Click to the image to read the reviews of Science Fiction books.
                         </small>
                     </div><!-- /.overlay-book_archive -->
-                    <img class="img-responsive img-home-book_archive" src="~/img/book_archive_1.png" alt="book_archive 1">
+                    <img class="img-responsive img-home-book_archive" src="~/img/book_archive_1.png" alt="book_archive 1" onclick="@("window.location.href='" + @Url.Action("CategoryScienceFiction", "Home") + "'")">
                 </a>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">

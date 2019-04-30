@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-Review",
+      "appliesTo": "WebApplication1/Models/Review.cs",
+      "type": "launch"
+    }
+  ]
+}
