@@ -45,18 +45,62 @@ namespace BookPortal.Controllers
 				//}).Where(c => c.ReviewId < 5).ToList()[0];
 			}).Where(c => c.ReviewId == id).ToList()[0];
 		}
+		//public ActionResult FirstFiveReviews(int? id)
+		//{
+		//	ReviewDTO review = GetFirstFiveReviews(id);
+		//	return View(review);
+		//}
 
 		public ActionResult FirstFiveReviews()
 		{
 			return View(db.Reviews.ToList());
 		}
 
-
-		//public ActionResult FirstFiveReviews(int? id)
+		//public Review GetCategoryScienceFiction(string category)
 		//{
-		//	ReviewDTO review = GetFirstFiveReviews(id);
+		//	return db.Reviews.Include("Review").Select(t => new Review
+		//	{
+		//		ReviewId = t.ReviewId,
+		//		Category = t.Category,
+		//		BookName = t.BookName,
+		//		ReviewType = t.ReviewType,
+		//		BookSubject = t.BookSubject,
+		//		BookAnalysis = t.BookAnalysis,
+		//		AuthorName = t.AuthorName,
+		//		OtherBooks = t.OtherBooks
+		//	}).Where(c => c.Category == category).ToList()[0];
+		//}
+		//public ActionResult CategoryScienceFiction(string category)
+		//{
+		//	Review review = GetCategoryScienceFiction(category);
 		//	return View(review);
 		//}
+		public ActionResult CategoryScienceFiction()
+		{
+			return View(db.Reviews.ToList());
+		}
+		public ActionResult CategoryGuide()
+		{
+			return View(db.Reviews.ToList());
+		}
+		public ActionResult CategoryDiaries()
+		{
+			return View(db.Reviews.ToList());
+		}
+		public ActionResult CategoryJournals()
+		{
+			return View(db.Reviews.ToList());
+		}
+		public ActionResult CategoryDrama()
+		{
+			return View(db.Reviews.ToList());
+		}
+		public ActionResult CategoryArt()
+		{
+			return View(db.Reviews.ToList());
+		}
+
+
 
 
 

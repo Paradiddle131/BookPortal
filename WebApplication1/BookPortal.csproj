@@ -347,6 +347,12 @@
     <Content Include="Views\Shared\_TopReviews.cshtml" />
     <Content Include="Views\Home\LastFiveReviews.cshtml" />
     <Content Include="Views\Home\FirstFiveReviews.cshtml" />
+    <Content Include="Views\Home\CategoryScienceFiction.cshtml" />
+    <Content Include="Views\Home\CategoryGuide.cshtml" />
+    <Content Include="Views\Home\CategoryDiaries.cshtml" />
+    <Content Include="Views\Home\CategoryJournals.cshtml" />
+    <Content Include="Views\Home\CategoryDrama.cshtml" />
+    <Content Include="Views\Home\CategoryArt.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
