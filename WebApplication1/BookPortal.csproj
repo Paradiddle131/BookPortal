@@ -170,6 +170,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\BookPortal.dll" />
+    <Content Include="bin\BookPortal.pdb" />
     <Content Include="css\addingReviewCss\form.css" />
     <Content Include="css\addingReviewCss\util.css" />
     <Content Include="css\addingReviewCss\webForm.css" />
@@ -197,7 +199,6 @@
     <Content Include="img\client-5.png" />
     <Content Include="img\client-6.png" />
     <Content Include="img\client-7.png" />
-    <Content Include="img\monster.png" />
     <Content Include="img\book_archive_1.png" />
     <Content Include="img\book_archive_2.png" />
     <Content Include="img\book_archive_3.png" />
@@ -221,13 +222,16 @@
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Models\RevModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>RevModel.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>RevModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\RevModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
+    <Content Include="Models\RevModel.edmx.diagram">
       <DependentUpon>RevModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\RevModel.tt">
+      <DependentUpon>RevModel.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>RevModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
@@ -264,13 +268,6 @@
     <Content Include="css\fonts\pacifico\pacifico-webfont.ttf" />
     <Content Include="css\fonts\pacifico\pacifico-webfont.woff" />
     <Content Include="css\fonts\pacifico\pacifico-webfontd41d.eot" />
-    <EntityDeploy Include="Models\RevModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>RevModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\RevModel.edmx.diagram">
-      <DependentUpon>RevModel.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -292,32 +289,36 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ReviewController.cs" />
+    <Compile Include="Controllers\ReviewVisualApperanceController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Categories.cs" />
+    <Compile Include="Models\CategoriesDB.cs" />
     <Compile Include="Models\Review.cs">
       <DependentUpon>RevModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ReviewCategory.cs" />
     <Compile Include="Models\ReviewContext.cs" />
     <Compile Include="Models\ReviewDTO.cs" />
     <Compile Include="Models\ReviewInitializer.cs" />
+    <Compile Include="Models\ReviewsDB.cs" />
     <Compile Include="Models\RevModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>RevModel.Context.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Models\RevModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>RevModel.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Models\RevModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>RevModel.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebGridExtensions.cs" />
@@ -353,6 +354,11 @@
     <Content Include="Views\Home\CategoryJournals.cshtml" />
     <Content Include="Views\Home\CategoryDrama.cshtml" />
     <Content Include="Views\Home\CategoryArt.cshtml" />
+    <Content Include="Views\ReviewVisualApperance\Index.cshtml" />
+    <Content Include="Views\ReviewVisualApperance\NewestBook.cshtml" />
+    <Content Include="Views\ReviewVisualApperance\OldestBook.cshtml" />
+    <Content Include="Views\ReviewVisualApperance\PopularBook.cshtml" />
+    <Content Include="Views\Content\Pharaohs.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -365,6 +371,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\RevModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RevModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

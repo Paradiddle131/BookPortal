@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
-    public class Review
+    public class ReviewsDB
     {
         [Key]
         public int ReviewId { get; set; }
@@ -25,7 +25,4 @@
         public CategoriesDB Categories { get; set; }
     }
 
-
-    
 }
-
