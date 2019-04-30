@@ -9,7 +9,7 @@ namespace DataLibrary.DataAccess
 {
 	public static class SqlDataAccess
 	{
-		public static string GetConnectionString(string connectionName = "RevDBEntities2")
+		public static string GetConnectionString(string connectionName = "RevDBEntities")
 		{
 			return ConfigurationManager.ConnectionStrings[connectionName].ConnectionString;
 		}

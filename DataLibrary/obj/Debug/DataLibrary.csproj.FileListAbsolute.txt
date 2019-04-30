@@ -19,9 +19,6 @@ D:\PROJECTS\ASP.NET MVC\BookPortal\DataLibrary\bin\Debug\EntityFramework.dll
 D:\PROJECTS\ASP.NET MVC\BookPortal\DataLibrary\bin\Debug\EntityFramework.SqlServer.dll
 D:\PROJECTS\ASP.NET MVC\BookPortal\DataLibrary\bin\Debug\EntityFramework.xml
 D:\PROJECTS\ASP.NET MVC\BookPortal\DataLibrary\bin\Debug\EntityFramework.SqlServer.xml
-D:\PROJECTS\ASP.NET MVC\BookPortal\DataLibrary\bin\Debug\ReviewSQL.mdf
-D:\PROJECTS\ASP.NET MVC\BookPortal\DataLibrary\bin\Debug\ReviewSQL_log.ldf
-D:\PROJECTS\ASP.NET MVC\BookPortal\DataLibrary\obj\Debug\DataLibrary.csprojAssemblyReference.cache
 C:\Users\toarslan\Desktop\BookPortal-master\BookPortal-master\DataLibrary\bin\Debug\ReviewSQL.mdf
 C:\Users\toarslan\Desktop\BookPortal-master\BookPortal-master\DataLibrary\bin\Debug\ReviewSQL_log.ldf
 C:\Users\toarslan\Desktop\BookPortal-master\BookPortal-master\DataLibrary\bin\Debug\DataLibrary.dll.config

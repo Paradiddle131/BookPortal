@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using DataLibrary;
-using static DataLibrary.BusinessLogic.ReviewProcessor;
-using DataLibrary.ModelsD;
+﻿using System.Web.Mvc;
 
 
 namespace BookPortal.Controllers
 {
-    public class AddReviewController : Controller
-    {
+	public class AddReviewController : Controller
+	{
 		public ActionResult Index()
 		{
 			ViewBag.Message = "Add Review.";
@@ -22,8 +15,8 @@ namespace BookPortal.Controllers
 		[HttpPost]
 		[ValidateAntiForgeryToken]
 
-		public ActionResult Index(ReviewModel model)
-        {
+		public ActionResult Index(ReviewController model)
+		{
 			if (ModelState.IsValid)
 			{
 				//ReviewProcessor.CreateReview()
@@ -34,5 +27,5 @@ namespace BookPortal.Controllers
 
 			return View();
 		}
-    }
+	}
 }

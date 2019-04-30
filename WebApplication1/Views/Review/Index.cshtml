@@ -1,0 +1,96 @@
+﻿@model IEnumerable<BookPortal.Models.Review>
+
+@{
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Reviews</h2>
+
+<p>
+	@Html.ActionLink("Create New", "Create")
+</p>
+
+<form id="formSearch" method="post">
+	<div class="row" id="SearchBox">
+		<div class="col-md-2">Book Name: </div>
+		<div class="col-md-2"><input type="text" value="@ViewBag.BookName" id="bookName" name="bookName" /></div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row" id="SearchBox">
+		<div class="col-md-2">Author Name: </div>
+		<div class="col-md-2"><input type="text" value="@ViewBag.AuthorName" id="authorName" name="authorName" /></div>
+		<div class="col-md-1"><input type="submit" id="submitSearch" value="Search" /></div>
+	</div>
+	<div class="row" id="SearchBox">
+		<div class="col-md-2">Category: </div>
+		<div class="col-md-2"><input type="text" value="@ViewBag.Category" id="category" name="category" /></div>
+		<div class="col-md-1">
+		</div>
+</form>
+
+<table class="table">
+	<tr>
+		<th>
+			@Html.DisplayNameFor(model => model.Category)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.BookName)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.ReviewType)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.BookSubject)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.BookAnalysis)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.AuthorName)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.OtherBooks)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.DateAdded)
+		</th>
+		<th></th>
+	</tr>
+
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.Category)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.BookName)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.ReviewType)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.BookSubject)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.BookAnalysis)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.AuthorName)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.OtherBooks)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.DateAdded)
+			</td>
+			<td>
+				@Html.ActionLink("Edit", "Edit", new { id = item.ReviewId }) |
+				@Html.ActionLink("Details", "Details", new { id = item.ReviewId }) |
+				@Html.ActionLink("Delete", "Delete", new { id = item.ReviewId })
+			</td>
+		</tr>
+	}
+
+</table>
