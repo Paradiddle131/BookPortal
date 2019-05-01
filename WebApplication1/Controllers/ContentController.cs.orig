@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ﻿using BookPortal.Models;
 using System;
 using System.Collections.Generic;
@@ -63,34 +63,3 @@ namespace BookPortal.Controllers
             return View(contents.ToList());
         }
     }
-=======
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-
-namespace BookPortal.Controllers
-{
-    public class ContentController : Controller
-    {
-        // GET: Content
-        public ActionResult Index()
-        {
-            return View();
-        }
-        public ActionResult Pharaohs()
-        {
-            return View();
-        }
-        public ActionResult Content2()
-        {
-            return View();
-        }
-        public ActionResult Content3()
-        {
-            return View();
-        }
-    }
->>>>>>> 6435920cd835c27602359462343a37f85e11ae6c
-}

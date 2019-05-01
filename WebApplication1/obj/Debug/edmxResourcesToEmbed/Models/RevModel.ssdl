@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="BookPortalDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="Review">
@@ -17,25 +16,4 @@
   <EntityContainer Name="BookPortalDBModelStoreContainer">
     <EntitySet Name="Review" EntityType="Self.Review" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
-=======
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="BookPortalDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityType Name="Review">
-    <Key>
-      <PropertyRef Name="ReviewId" />
-    </Key>
-    <Property Name="ReviewId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Category" Type="nchar" MaxLength="50" />
-    <Property Name="BookName" Type="nchar" MaxLength="50" />
-    <Property Name="ReviewType" Type="nchar" MaxLength="50" />
-    <Property Name="BookSubject" Type="nchar" MaxLength="50" />
-    <Property Name="BookAnalysis" Type="nchar" MaxLength="999" />
-    <Property Name="AuthorName" Type="nchar" MaxLength="50" />
-    <Property Name="OtherBooks" Type="nchar" MaxLength="50" />
-    <Property Name="DateAdded" Type="date" />
-  </EntityType>
-  <EntityContainer Name="BookPortalDBModelStoreContainer">
-    <EntitySet Name="Review" EntityType="Self.Review" Schema="dbo" store:Type="Tables" />
-  </EntityContainer>
->>>>>>> fcf69111744a6da11cbe437c55021f308bc2d8fd
 </Schema>

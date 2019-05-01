@@ -25,5 +25,30 @@ namespace BookPortal.Controllers
         {
             return View(context.Reviews.ToList());
         }
+        public ActionResult Art()
+        {
+            return View(context.Reviews.ToList());
+        }
+        public ActionResult Diaries()
+        {
+            return View(context.Reviews.ToList());
+        }
+        public ActionResult Drama()
+        {
+            return View(context.Reviews.ToList());
+        }
+        public ActionResult Guide()
+        {
+            return View(context.Reviews.ToList());
+        }
+        public ActionResult Journals()
+        {
+            return View(context.Reviews.ToList());
+        }
+        public ActionResult ScienceFiction()
+        {
+            return View(context.Reviews.ToList());
+        }
+       
     }
 }

@@ -6,7 +6,7 @@
 
     <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'London')">Lısted Version</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Virtual Version</button>
+        <a href="/ReviewVisualApperance/Art"><button class="tablinks" onclick="openCity(event, 'Visual')">Virtual Version</button></a>
     </div>
 
     <div id="London" class="tabcontent">
@@ -27,7 +27,7 @@
             <tbody>
                 @foreach (var item in Model)
                 {
-                    if (@item.CategoryId==1)
+                    if (@item.CategoryId==4)
                     {
                         <tr class="table-info">
                             <td>@item.Categories</td>
@@ -51,13 +51,13 @@
 
 
 
-<div id="Paris" class="tabcontent">
+<div id="Visual" class="tabcontent">
     <div class="col-md-12">
         <div class="col-md-3">
 
         </div>
         <div class="col-md-9">
-            @foreach (var item in Model)
+            @*@foreach (var item in Model)
             {
                 <div class="reviews_content">
                     <div class="col-md-8 col-sm-8">
@@ -85,11 +85,11 @@
 
                             </p>
                             <a class="btn btn-primary" href="/Content/review_id_@item.ReviewId">Read More <i class="fa fa-angle-right"></i></a>
-                        </div><!-- /.post -->
+                        </div> /.post 
                     </div>
                 </div>
 
-            }
+            }*@
 
         </div>
 

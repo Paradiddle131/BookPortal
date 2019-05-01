@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="BookPortalDBModelStoreContainer" CdmEntityContainer="RevDBEntities">
     <EntitySetMapping Name="Reviews">
@@ -17,25 +16,4 @@
       </EntityTypeMapping>
     </EntitySetMapping>
   </EntityContainerMapping>
-=======
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="BookPortalDBModelStoreContainer" CdmEntityContainer="RevDBEntities">
-    <EntitySetMapping Name="Reviews">
-      <EntityTypeMapping TypeName="BookPortalDBModel.Review">
-        <MappingFragment StoreEntitySet="Review">
-          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
-          <ScalarProperty Name="ReviewId" ColumnName="ReviewId" />
-          <ScalarProperty Name="Category" ColumnName="Category" />
-          <ScalarProperty Name="BookName" ColumnName="BookName" />
-          <ScalarProperty Name="ReviewType" ColumnName="ReviewType" />
-          <ScalarProperty Name="BookSubject" ColumnName="BookSubject" />
-          <ScalarProperty Name="BookAnalysis" ColumnName="BookAnalysis" />
-          <ScalarProperty Name="AuthorName" ColumnName="AuthorName" />
-          <ScalarProperty Name="OtherBooks" ColumnName="OtherBooks" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-  </EntityContainerMapping>
->>>>>>> fcf69111744a6da11cbe437c55021f308bc2d8fd
 </Mapping>

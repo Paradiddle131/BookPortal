@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="BookPortalDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="Review">
     <Key>
@@ -18,25 +17,5 @@
   <EntityContainer Name="RevDBEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Reviews" EntityType="Self.Review" />
   </EntityContainer>
-=======
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="BookPortalDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="Review">
-    <Key>
-      <PropertyRef Name="ReviewId" />
-    </Key>
-    <Property Name="ReviewId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Category" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-    <Property Name="BookName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-    <Property Name="ReviewType" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-    <Property Name="BookSubject" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-    <Property Name="BookAnalysis" Type="String" MaxLength="999" FixedLength="true" Unicode="true" />
-    <Property Name="AuthorName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-    <Property Name="OtherBooks" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-    <Property Name="DateAdded" Type="DateTime" Precision="0" />
-  </EntityType>
-  <EntityContainer Name="RevDBEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Reviews" EntityType="Self.Review" />
-  </EntityContainer>
->>>>>>> fcf69111744a6da11cbe437c55021f308bc2d8fd
+
 </Schema>
