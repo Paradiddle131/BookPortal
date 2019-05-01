@@ -12,12 +12,11 @@
           <Property Name="ReviewId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Category" Type="nchar" MaxLength="50" />
           <Property Name="BookName" Type="nchar" MaxLength="50" />
+          <Property Name="AuthorName" Type="nchar" MaxLength="50" />
+          <Property Name="DateAdded" Type="datetime" />
           <Property Name="ReviewType" Type="nchar" MaxLength="50" />
           <Property Name="BookSubject" Type="nchar" MaxLength="50" />
-          <Property Name="BookAnalysis" Type="nchar" MaxLength="999" />
-          <Property Name="AuthorName" Type="nchar" MaxLength="50" />
           <Property Name="OtherBooks" Type="nchar" MaxLength="50" />
-          <Property Name="DateAdded" Type="date" />
         </EntityType>
         <EntityContainer Name="BookPortalDBModelStoreContainer">
           <EntitySet Name="Review" EntityType="Self.Review" Schema="dbo" store:Type="Tables" />
@@ -38,7 +37,7 @@
           <Property Name="BookAnalysis" Type="String" MaxLength="999" FixedLength="true" Unicode="true" />
           <Property Name="AuthorName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
           <Property Name="OtherBooks" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-          <Property Name="DateAdded" Type="DateTime" Precision="0" />
+          <Property Name="DateAdded" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityContainer Name="RevDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Reviews" EntityType="Self.Review" />
@@ -58,7 +57,6 @@
                 <ScalarProperty Name="BookName" ColumnName="BookName" />
                 <ScalarProperty Name="ReviewType" ColumnName="ReviewType" />
                 <ScalarProperty Name="BookSubject" ColumnName="BookSubject" />
-                <ScalarProperty Name="BookAnalysis" ColumnName="BookAnalysis" />
                 <ScalarProperty Name="AuthorName" ColumnName="AuthorName" />
                 <ScalarProperty Name="OtherBooks" ColumnName="OtherBooks" />
               </MappingFragment>

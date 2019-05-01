@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "ExpandedNodes": [
     "",
@@ -11,4 +12,19 @@
   ],
   "SelectedNode": "\\WebApplication1\\Views\\ReviewVisualApperance\\Index.cshtml",
   "PreviewInSolutionExplorer": false
+=======
+{
+  "ExpandedNodes": [
+    "",
+    "\\WebApplication1",
+    "\\WebApplication1\\Controllers",
+    "\\WebApplication1\\css",
+    "\\WebApplication1\\Models",
+    "\\WebApplication1\\Views",
+    "\\WebApplication1\\Views\\ReviewVisualApperance",
+    "\\WebApplication1\\Views\\Shared"
+  ],
+  "SelectedNode": "\\WebApplication1\\Models\\ReviewsDB.cs",
+  "PreviewInSolutionExplorer": false
+>>>>>>> 6435920cd835c27602359462343a37f85e11ae6c
 }

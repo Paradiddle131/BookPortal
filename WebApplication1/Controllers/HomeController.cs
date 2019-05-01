@@ -102,12 +102,6 @@ namespace BookPortal.Controllers
 		}
 
 
-
-
-
-
-
-
 		/*
 		public ActionResult TopReviews()
 		{

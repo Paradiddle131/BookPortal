@@ -681,6 +681,8 @@ D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.IO.FileSyst
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\roslyn\System.ValueTuple.dll
+<<<<<<< HEAD
+=======
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\obj\Debug\BookPortal.csprojAssemblyReference.cache
 C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\BookPortal.dll.config
 C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\BookPortal.dll
@@ -892,3 +894,4 @@ C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.csp
 C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.dll
 C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.pdb
 C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.csprojAssemblyReference.cache
+>>>>>>> fcf69111744a6da11cbe437c55021f308bc2d8fd
