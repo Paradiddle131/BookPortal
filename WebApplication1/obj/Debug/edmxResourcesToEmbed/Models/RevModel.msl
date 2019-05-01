@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="BookPortalDBModelStoreContainer" CdmEntityContainer="RevDBEntities">
     <EntitySetMapping Name="Reviews">
       <EntityTypeMapping TypeName="BookPortalDBModel.Review">
         <MappingFragment StoreEntitySet="Review">
+          <ScalarProperty Name="BookAnalysis" ColumnName="BookAnalysis" />
           <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
           <ScalarProperty Name="ReviewId" ColumnName="ReviewId" />
           <ScalarProperty Name="Category" ColumnName="Category" />

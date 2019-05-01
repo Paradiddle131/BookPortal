@@ -29,18 +29,18 @@
 		</nav>
 		<div>
 		@grid.Table(
-						 tableStyle: "table table-responsive table-bordered",
-						 columns: grid.Columns(
-							 grid.Column(columnName: "BookName", header: "Book Name"),
-							 grid.Column(columnName: "AuthorName", header: "Author Name"),
-							 grid.Column(columnName: "Category", header: "Category"),
-							 grid.Column(columnName: "ReviewType", header: "Review Type"),
-							 grid.Column(columnName: "BookAnalysis", header: "Book Analysis"),
-							 grid.Column(columnName: "OtherBooks", header: "Other Books"),
-							 grid.Column(columnName: "BookSubject", header: "Book Subject"),
-							 grid.Column(columnName: "DateAdded", header: "Date Added")
-							 )
-										)
+								  tableStyle: "table table-responsive table-bordered",
+								  columns: grid.Columns(
+									  grid.Column(columnName: "BookName", header: "Book Name"),
+									  grid.Column(columnName: "AuthorName", header: "Author Name"),
+									  grid.Column(columnName: "Category", header: "Category"),
+									  grid.Column(columnName: "ReviewType", header: "Review Type"),
+									  grid.Column(columnName: "BookAnalysis", header: "Book Analysis"),
+									  grid.Column(columnName: "OtherBooks", header: "Other Books"),
+									  grid.Column(columnName: "BookSubject", header: "Book Subject"),
+									  grid.Column(columnName: "DateAdded", header: "Date Added")
+									  )
+												 )
 			<div class="row">
 				<div class="col-se-6">
 					@grid.PagerList(mode: WebGridPagerModes.All, paginationStyle: "pagination pagination-swmall pagination-right")

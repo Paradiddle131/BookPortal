@@ -1,4 +1,5 @@
-﻿@model IEnumerable<BookPortal.Models.Review>
+﻿@*@model IEnumerable<BookPortal.Models.ReviewsDB>*@
+@model IEnumerable<BookPortal.Models.Review>
 
 @{
 	ViewBag.Title = "Index";
@@ -7,90 +8,152 @@
 
 <h2>Reviews</h2>
 
+<script src="~/Scripts/jquery.shorten.min.js"></script>
+<script src="~/Scripts/jquery.shorten.js"></script>
+
 <p>
 	@Html.ActionLink("Create New", "Create")
 </p>
-
-<form id="formSearch" method="post">
-	<div class="row" id="SearchBox">
-		<div class="col-md-2">Book Name: </div>
-		<div class="col-md-2"><input type="text" value="@ViewBag.BookName" id="bookName" name="bookName" /></div>
-		<div class="col-md-1"></div>
-	</div>
-	<div class="row" id="SearchBox">
-		<div class="col-md-2">Author Name: </div>
-		<div class="col-md-2"><input type="text" value="@ViewBag.AuthorName" id="authorName" name="authorName" /></div>
-		<div class="col-md-1"><input type="submit" id="submitSearch" value="Search" /></div>
-	</div>
-	<div class="row" id="SearchBox">
-		<div class="col-md-2">Category: </div>
-		<div class="col-md-2"><input type="text" value="@ViewBag.Category" id="category" name="category" /></div>
-		<div class="col-md-1">
+@*
+	<form id="formSearch" method="post">
+		<div class="row" id="SearchBox">
+			<div class="col-md-2">Book Name: </div>
+			<div class="col-md-2"><input type="text" value="@ViewBag.BookName" id="bookName" name="bookName" /></div>
+			<div class="col-md-1"></div>
 		</div>
-</form>
+		<div class="row" id="SearchBox">
+			<div class="col-md-2">Author Name: </div>
+			<div class="col-md-2"><input type="text" value="@ViewBag.AuthorName" id="authorName" name="authorName" /></div>
+			<div class="col-md-1"><input type="submit" id="submitSearch" value="Search" /></div>
+		</div>
+		<div class="row" id="SearchBox">
+			<div class="col-md-2">Category: </div>
+			<div class="col-md-2"><input type="text" value="@ViewBag.Category" id="category" name="category" /></div>
+			<div class="col-md-1">
+			</div>
+	</form>
+*@
 
-<table class="table">
-	<tr>
-		<th>
-			@Html.DisplayNameFor(model => model.Category)
-		</th>
-		<th>
-			@Html.DisplayNameFor(model => model.BookName)
-		</th>
-		<th>
-			@Html.DisplayNameFor(model => model.ReviewType)
-		</th>
-		<th>
-			@Html.DisplayNameFor(model => model.BookSubject)
-		</th>
-		<th>
-			@Html.DisplayNameFor(model => model.BookAnalysis)
-		</th>
-		<th>
-			@Html.DisplayNameFor(model => model.AuthorName)
-		</th>
-		<th>
-			@Html.DisplayNameFor(model => model.OtherBooks)
-		</th>
-		<th>
-			@Html.DisplayNameFor(model => model.DateAdded)
-		</th>
-		<th></th>
-	</tr>
 
-	@foreach (var item in Model)
-	{
+<div class="container">
+	<table class="table table-striped table-bordered table-hover" id="mydata">
+		<thead>
+			<tr>
+				<th>Category</th>
+				<th>Book Name</th>
+				<th>Review Type</th>
+				<th>Book Subject</th>
+				<th>Book Analysis</th>
+				<th>Author Name</th>
+				<th>Other Books</th>
+				<th>Date Added</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr class="table-info">
+					<td>@item.Category</td>
+					<td>@item.BookName</td>
+					<td>@item.ReviewType</td>
+					<td>@item.BookSubject</td>
+					<td>
+						<div class="review">@item.BookAnalysis</div>
+						<script type="text/javascript">
+							$(document).ready(function () {
+
+								$(".review").shorten();
+							});
+						</script>
+					</td>
+					<td>@item.AuthorName</td>
+					<td>@item.OtherBooks</td>
+					<td>@item.DateAdded</td>
+					<td>
+						@Html.ActionLink("Edit", "Edit", new { id = item.ReviewId }) |
+						@Html.ActionLink("Details", "Details", new { id = item.ReviewId }) |
+						@Html.ActionLink("Delete", "Delete", new { id = item.ReviewId })
+					</td>
+				</tr>
+
+			}
+		</tbody>
+		<!--Table body-->
+
+	</table>
+</div>
+
+
+
+
+
+
+@*
+	<table class="table">
 		<tr>
-			<td>
-				@Html.DisplayFor(modelItem => item.Category)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.BookName)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.ReviewType)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.BookSubject)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.BookAnalysis)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.AuthorName)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.OtherBooks)
-			</td>
-			<td>
-				@Html.DisplayFor(modelItem => item.DateAdded)
-			</td>
-			<td>
-				@Html.ActionLink("Edit", "Edit", new { id = item.ReviewId }) |
-				@Html.ActionLink("Details", "Details", new { id = item.ReviewId }) |
-				@Html.ActionLink("Delete", "Delete", new { id = item.ReviewId })
-			</td>
+			<th>
+				@Html.DisplayNameFor(model => model.Category)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.BookName)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.ReviewType)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.BookSubject)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.BookAnalysis)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.AuthorName)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.OtherBooks)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.DateAdded)
+			</th>
+			<th></th>
 		</tr>
-	}
 
-</table>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Category)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.BookName)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.ReviewType)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.BookSubject)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.BookAnalysis)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.AuthorName)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.OtherBooks)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.DateAdded)
+				</td>
+				<td>
+					@Html.ActionLink("Edit", "Edit", new { id = item.ReviewId }) |
+					@Html.ActionLink("Details", "Details", new { id = item.ReviewId }) |
+					@Html.ActionLink("Delete", "Delete", new { id = item.ReviewId })
+				</td>
+			</tr>
+		}
+
+	</table>
+
+*@
