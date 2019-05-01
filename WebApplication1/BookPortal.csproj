@@ -393,6 +393,7 @@
     <Content Include="fonts\glyphicons-halflings-regular-4.html" />
     <Content Include="fonts\glyphicons-halflings-regular.html" />
     <Content Include="fonts\glyphicons-halflings-regulard41d.html" />
+    <Content Include="img\blood.jpg" />
     <Content Include="img\client-1.png" />
     <Content Include="img\client-2.png" />
     <Content Include="img\client-3.png" />
@@ -406,8 +407,14 @@
     <Content Include="img\book_archive_4.png" />
     <Content Include="img\book_archive_5.png" />
     <Content Include="img\book_archive_6.png" />
+    <Content Include="img\cocoon.jpg" />
+    <Content Include="img\daughterofsnow.jpg" />
+    <Content Include="img\desertsnow.jpg" />
+    <Content Include="img\eternity.jpg" />
     <Content Include="img\hardtimes.jpg" />
-    <Content Include="img\post1.png" />
+    <Content Include="img\modernınstance.jpg" />
+    <Content Include="img\nile.jpg" />
+    <Content Include="img\pharaohs.jpg" />
     <Content Include="img\post2.png" />
     <Content Include="img\post3.png" />
     <Content Include="img\section-bg.png" />
