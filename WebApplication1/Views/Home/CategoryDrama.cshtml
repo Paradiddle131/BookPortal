@@ -1,78 +1,125 @@
-﻿@model List<BookPortal.Models.Review>
+﻿@model IEnumerable<BookPortal.Models.ReviewsDB>
+
+<div class="container">
+    <h1>Category: Drama</h1>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Bootstrap 101 Template</title>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">Lısted Version</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Virtual Version</button>
+    </div>
 
-	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <div id="London" class="tabcontent">
 
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-</head>
-<body>
-	<p><br /></p>
-	<div class="container">
-		<h1>Category: Science Fiction</h1>
-		<table class="table table-striped table-bordered table-hover" id="mydata">
-			<thead>
-				<tr>
-					<th>Category</th>
-					<th>Book Name</th>
-					<th>Review Type</th>
-					<th>Book Subject</th>
-					<th>Book Analysis</th>
-					<th>Author Name</th>
-					<th>Other Books</th>
-					<th>Date Added</th>
-				</tr>
-			</thead>
-			<tbody>
-				@foreach (var item in Model)
-				{
-					if (@item.Category.ToString().Trim() == "Drama")
-					{
-						<tr class="table-info">
-							<td>@item.Category</td>
-							<td>@item.BookName</td>
-							<td>@item.ReviewType</td>
-							<td>@item.BookSubject</td>
-							<td>@item.BookAnalysis</td>
-							<td>@item.AuthorName</td>
-							<td>@item.OtherBooks</td>
-							<td>@item.DateAdded</td>
-						</tr>
-					}
-				}
-			</tbody>
-			<!--Table body-->
+        <table class="table table-striped table-bordered table-hover" id="mydata">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Book Name</th>
+                    <th>Review Type</th>
+                    <th>Book Subject</th>
+                    <th>Book Analysis</th>
+                    <th>Author Name</th>
+                    <th>Other Books</th>
+                    <th>Date Added</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    if (@item.CategoryId == 1)
+                    {
+                        <tr class="table-info">
+                            <td>@item.Categories</td>
+                            <td>@item.BookName</td>
+                            <td>@item.ReviewType</td>
+                            <td>@item.BookSubject</td>
+                            <td>@item.BookAnalysis</td>
+                            <td>@item.AuthorName</td>
+                            <td>@item.OtherBooks</td>
+                            <td>@item.UploadDate</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+            <!--Table body-->
+
+        </table>
+        <!--Table-->
+    </div>
+</div>
 
 
-		</table>
-		<!--Table-->
-	</div>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="jd/jquery.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.dataTables.min.js"></script>
-	<script src="js/dataTables.bootstrap.min.js"></script>
-	<script>
-		$('#mydata').datatables();
-	</script>
-</body>
-</html>
+<div id="Paris" class="tabcontent">
+    <div class="col-md-12">
+        <div class="col-md-3">
 
+        </div>
+        <div class="col-md-9">
+            @foreach (var item in Model)
+            {
+                <div class="reviews_content">
+                    <div class="col-md-8 col-sm-8">
+                        <div class="post">
+                            <h2 class="post-title"><a href="blog-post.html">@item.BookName</a></h2>
+                            <p class="post-meta">
+                                <i class="fa fa-calendar-o first"></i> @item.UploadDate
+                                <i class="fa fa-user"></i> @item.AuthorName
+                                <i class="fa fa-comment"></i> <a href="#">@item.ReviewId</a>
+                            </p>
+                            <a href="blog-post.html" class="img-post">
+                                <img src="~/img/post2.png" alt="post 2" class="img-responsive">
+                            </a>
+                            <p>
+
+                                @if (@item.Content.Length > 100)
+                                {
+                                    @(item.Content.Substring(0, 95) + "...")
+                                }
+                                else
+                                {
+                                    @item.Content
+
+                                }
+
+                            </p>
+                            <a class="btn btn-primary" href="/Content/review_id_@item.ReviewId">Read More <i class="fa fa-angle-right"></i></a>
+                        </div><!-- /.post -->
+                    </div>
+                </div>
+
+            }
+
+        </div>
+
+
+    </div>
+
+
+
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="jd/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/dataTables.bootstrap.min.js"></script>
+<script>
+    $('#mydata').datatables();
+</script>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="jd/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/dataTables.bootstrap.min.js"></script>
+<script>
+    $('#mydata').datatables();
+</script>
 

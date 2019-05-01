@@ -11,15 +11,7 @@
 
     <h2>NewestBook</h2>
 
-    @*<hr />
-        <div class="alert alert-success" role="alert">
-            <strong>
-                Number of Reviews: @Model.NumberOfReview
-            </strong>
-        </div>*@
-
     <hr />
-
 
     <div class="col-md-3">
 
@@ -55,7 +47,7 @@
                             }
 
                         </p>
-                        <a class="btn btn-primary" href="~/Views/Content/@item.BookName">Read More <i class="fa fa-angle-right"></i></a>
+                        <a class="btn btn-primary" href="/Content/review_id_@item.ReviewId">Read More <i class="fa fa-angle-right"></i></a>
                     </div><!-- /.post -->
                 </div>
             </div>

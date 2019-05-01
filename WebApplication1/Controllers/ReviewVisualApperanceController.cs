@@ -7,7 +7,7 @@ namespace BookPortal.Controllers
 {
     public class ReviewVisualApperanceController : Controller
     {
-        private ReviewContext context = new ReviewContext();
+        private ReviewsContext context = new ReviewsContext();
 
         public ActionResult Index()
         {
@@ -19,11 +19,11 @@ namespace BookPortal.Controllers
         }
         public ActionResult PopularBook()
         {
-            return View();
+            return View(context.Reviews.ToList());
         }
         public ActionResult OldestBook()
         {
-            return View();
+            return View(context.Reviews.ToList());
         }
     }
 }

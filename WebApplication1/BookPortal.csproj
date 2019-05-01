@@ -187,6 +187,7 @@
     <Content Include="css\fonts\pacifico\pacifico-webfont.svg" />
     <Content Include="css\form.css" />
     <Content Include="css\style.css" />
+    <Content Include="css\tab.css" />
     <Content Include="fonts\glyphicons-halflings-regular-2.html" />
     <Content Include="fonts\glyphicons-halflings-regular-3.html" />
     <Content Include="fonts\glyphicons-halflings-regular-4.html" />
@@ -221,6 +222,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <Content Include="js\tab.js" />
     <Content Include="Models\RevModel.Context.tt">
       <DependentUpon>RevModel.edmx</DependentUpon>
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -296,6 +298,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Categories.cs" />
     <Compile Include="Models\CategoriesDB.cs" />
     <Compile Include="Models\Review.cs">
       <DependentUpon>RevModel.tt</DependentUpon>
@@ -304,6 +307,8 @@
     <Compile Include="Models\ReviewContext.cs" />
     <Compile Include="Models\ReviewDTO.cs" />
     <Compile Include="Models\ReviewInitializer.cs" />
+    <Compile Include="Models\ReviewsInitializer.cs" />
+    <Compile Include="Models\ReviewsContext.cs" />
     <Compile Include="Models\ReviewsDB.cs" />
     <Compile Include="Models\RevModel.Context.cs">
       <DependentUpon>RevModel.Context.tt</DependentUpon>
@@ -334,7 +339,6 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\_Carousel.cshtml" />
     <Content Include="Views\Shared\_RecentProjects.cshtml" />
-    <Content Include="Views\AddReview\Index.cshtml" />
     <Content Include="Views\Shared\_CategoryMenu.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
@@ -345,7 +349,6 @@
     <Content Include="Views\Review\Edit.cshtml" />
     <Content Include="Views\Review\Index.cshtml" />
     <Content Include="Views\Review\SearchIndex.cshtml" />
-    <Content Include="Views\Shared\_TopReviews.cshtml" />
     <Content Include="Views\Home\LastFiveReviews.cshtml" />
     <Content Include="Views\Home\FirstFiveReviews.cshtml" />
     <Content Include="Views\Home\CategoryScienceFiction.cshtml" />
@@ -358,7 +361,15 @@
     <Content Include="Views\ReviewVisualApperance\NewestBook.cshtml" />
     <Content Include="Views\ReviewVisualApperance\OldestBook.cshtml" />
     <Content Include="Views\ReviewVisualApperance\PopularBook.cshtml" />
-    <Content Include="Views\Content\Pharaohs.cshtml" />
+    <Content Include="Views\Content\review_id_1.cshtml" />
+    <Content Include="Views\Content\review_id_2.cshtml" />
+    <Content Include="Views\Content\review_id_3.cshtml" />
+    <Content Include="Views\Content\review_id_4.cshtml" />
+    <Content Include="Views\Content\review_id_5.cshtml" />
+    <Content Include="Views\Content\review_id_6.cshtml" />
+    <Content Include="Views\Content\review_id_7.cshtml" />
+    <Content Include="Views\Content\review_id_9.cshtml" />
+    <Content Include="Views\Content\review_id_8.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -7,8 +7,9 @@ namespace BookPortal.Controllers
 	public class HomeController : Controller
 	{
 		private readonly RevDBEntities db = new RevDBEntities();
+        private ReviewsContext context = new ReviewsContext();
 
-		private readonly ReviewContext _db;
+        private readonly ReviewContext _db;
 		public HomeController(ReviewContext db)
 		{
 			_db = db;
@@ -77,27 +78,27 @@ namespace BookPortal.Controllers
 		//}
 		public ActionResult CategoryScienceFiction()
 		{
-			return View(db.Reviews.ToList());
+			return View(context.Reviews.ToList());
 		}
 		public ActionResult CategoryGuide()
 		{
-			return View(db.Reviews.ToList());
+			return View(context.Reviews.ToList());
 		}
 		public ActionResult CategoryDiaries()
 		{
-			return View(db.Reviews.ToList());
+			return View(context.Reviews.ToList());
 		}
 		public ActionResult CategoryJournals()
 		{
-			return View(db.Reviews.ToList());
+			return View(context.Reviews.ToList());
 		}
 		public ActionResult CategoryDrama()
 		{
-			return View(db.Reviews.ToList());
+			return View(context.Reviews.ToList());
 		}
 		public ActionResult CategoryArt()
 		{
-			return View(db.Reviews.ToList());
+			return View(context.Reviews.ToList());
 		}
 
 

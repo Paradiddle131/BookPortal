@@ -11,21 +11,48 @@
             <div class="fill" style="background-image:url('../../img/slide/slide1.png');"></div>
             <div class="carousel-caption">
                 <h2>Newest Book Review</h2>
-                <a href="#" class="button" onclick="@("window.location.href='" + @Url.Action("LastFiveReviews", "Home") + "'")">SEE MORE</a>
+                <div class="col-md-12">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <a href="/Home/LastFiveReviews" class="button">SEE LIST VERSION</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/ReviewVisualApperance/NewestBook" class="button">SEE VIRTUAL VERSION</a>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>                
             </div>
         </div>
         <div class="item">
             <div class="fill" style="background-image:url('../../img/slide/slide2.png');"></div>
             <div class="carousel-caption">
                 <h2>Popular Book Review</h2>
-                <a href="#" class="button" onclick="@("window.location.href='" + @Url.Action("TopReviews", "Home") + "'")">SEE MORE</a>
+                <div class="col-md-12">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <a href="/Home/TopReviews" class="button">SEE LIST VERSION</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/ReviewVisualApperance/PopularBook" class="button">SEE VIRTUAL VERSION</a>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>                              
             </div>
         </div>
         <div class="item">
             <div class="fill" style="background-image:url('../../img/slide/slide3.png');"></div>
             <div class="carousel-caption">
                 <h2>Oldest Book Review</h2>
-                <a href="#" class="button" onclick="@("window.location.href='" + @Url.Action("FirstFiveReviews", "Home") + "'")">SEE MORE</a>
+                <div class="col-md-12">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <a href="/Home/FirstFiveReviews" class="button">SEE LIST VERSION</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/ReviewVisualApperance/OldestBook" class="button">SEE VIRTUAL VERSION</a>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
             </div>
         </div>
     </div>
