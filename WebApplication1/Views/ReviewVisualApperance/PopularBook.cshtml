@@ -14,37 +14,35 @@
 
         @foreach (var item in Model)
         {
-
-            <div class="reviews_content">
-                <div class="col-md-8 col-sm-8">
-                    <div class="post">
-                        <h2 class="post-title"><a href="#">@item.BookName</a></h2>
-                        <p class="post-meta">
-                            <i class="fa fa-calendar-o first"></i> @item.UploadDate
-                            <i class="fa fa-user"></i> @item.AuthorName
-                            <i class="fa fa-comment"></i> <a href="#">@item.ReviewId</a>
-                        </p>
-                        <a href="#" class="img-post">
-                            <img src="~/img/@item.Picture" alt="post 2" class="img-responsive">
-                        </a>
-                        <p>
-
-                            @if (@item.Content.Length > 100)
-                            {
-                                @(item.Content.Substring(0, 95) + "...")
-                            }
-                            else
-                            {
-                                @item.Content
-
-                            }
-
-                        </p>
-                        <a class="btn btn-primary" href="/Content/review_id_@item.ReviewId">Read More <i class="fa fa-angle-right"></i></a>
-                    </div><!-- /.post -->
+            if (item.Status == "top")
+            {
+                <div class="reviews_content">
+                    <div class="col-md-8 col-sm-8">
+                        <div class="post">
+                            <h2 class="post-title"><a href="#">@item.BookName</a></h2>
+                            <p class="post-meta">
+                                <i class="fa fa-calendar-o first"></i> @item.UploadDate
+                                <i class="fa fa-user"></i> @item.AuthorName
+                                <i class="fa fa-info"></i> <a href="#">@item.ReviewId</a>
+                            </p>
+                            <a href="#" class="img-post">
+                                <img src="~/img/@item.Picture" alt="post 2" class="img-responsive">
+                            </a>
+                            <p>
+                                @if (@item.Content.Length > 100)
+                                {
+                                    @(item.Content.Substring(0, 95) + "...")
+                                }
+                                else
+                                {
+                                    @item.Content
+                                }
+                            </p>
+                            <a class="btn btn-primary" href="/Content/review_id_@item.ReviewId">Read More <i class="fa fa-angle-right"></i></a>
+                        </div><!-- /.post -->
+                    </div>
                 </div>
-            </div>
-
+            }
         }
     </div>
 </div>
