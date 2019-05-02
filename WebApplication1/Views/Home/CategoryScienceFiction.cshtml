@@ -5,117 +5,82 @@
 <script src="~/Scripts/jquery.shorten.js"></script>
 
 <div class="container">
-	<h1>Category: ScienceFiction</h1>
+    <h1>Category: ScienceFiction</h1>
 
 
-	<div class="tab">
-		<button class="tablinks" onclick="tapOpen(event, 'ListedVersion')">Listed Version</button>
-		<a href="/ReviewVisualApperance/ScienceFiction"><button class="tablinks" onclick="tapOpen(event, 'Visual')">Virtual Version</button></a>
-	</div>
+    <div class="tab">
+        <button class="tablinks" onclick="tapOpen(event, 'ListedVersion')">Listed Version</button>
+        <a href="/ReviewVisualApperance/ScienceFiction"><button class="tablinks" onclick="tapOpen(event, 'Visual')">Virtual Version</button></a>
+    </div>
 
-	<div id="ListedVersion" class="tabcontent">
+    <div id="ListedVersion" class="tabcontent">
 
-		<table class="table table-striped table-bordered table-hover" id="mydata">
-			<thead>
-				<tr>
-					<th>Category</th>
-					<th>Book Name</th>
-					<th>Review Type</th>
-					<th>Book Subject</th>
-					<th>Book Analysis</th>
-					<th>Author Name</th>
-					<th>Other Books</th>
-					<th>Date Added</th>
-				</tr>
-			</thead>
-			<tbody>
-				@foreach (var item in Model)
-				{
-					if (@item.Category.ToString().Trim() == "Science fiction")
-					{
-						<tr class="table-info">
-							<td>@item.Category</td>
-							<td>@item.BookName</td>
-							<td>@item.ReviewType</td>
-							<td>@item.BookSubject</td>
-							<td>
-								<div class="review">@item.BookAnalysis</div>
-								<script type="text/javascript">
-									$(document).ready(function () {
+        <table class="table table-striped table-bordered table-hover" id="mydata">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Book Name</th>
+                    <th>Review Type</th>
+                    <th>Book Subject</th>
+                    <th>Book Analysis</th>
+                    <th>Author Name</th>
+                    <th>Other Books</th>
+                    <th>Date Added</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    if (@item.Category.ToString().Trim() == "Science fiction")
+                    {
+                        <tr class="table-info">
+                            <td>@item.Category</td>
+                            <td>@item.BookName</td>
+                            <td>@item.ReviewType</td>
+                            <td>@item.BookSubject</td>
+                            <td>
+                                <div class="review">@item.BookAnalysis</div>
+                                <script type="text/javascript">
+                                    $(document).ready(function () {
 
-										$(".review").shorten();
-									});
-								</script>
-							</td>
-							<td>@item.AuthorName</td>
-							<td>@item.OtherBooks</td>
-							<td>@item.DateAdded</td>
-						</tr>
-					}
-				}
-			</tbody>
-			<!--Table body-->
+                                        $(".review").shorten();
+                                    });
+                                </script>
+                            </td>
+                            <td>@item.AuthorName</td>
+                            <td>@item.OtherBooks</td>
+                            <td>@item.DateAdded</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+            <!--Table body-->
 
-		</table>
-		<!--Table-->
-	</div>
+        </table>
+        <!--Table-->
+    </div>
 </div>
 
-@*
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
-<div id="Visual" class="tabcontent">
-	<div class="col-md-12">
-		<div class="col-md-3">
-
-		</div>
-		<div class="col-md-9">
-			@foreach (var item in Model)
-			{
-				<div class="reviews_content">
-					<div class="col-md-8 col-sm-8">
-						<div class="post">
-							<h2 class="post-title"><a href="blog-post.html">@item.BookName</a></h2>
-							<p class="post-meta">
-								<i class="fa fa-calendar-o first"></i> @item.UploadDate
-								<i class="fa fa-user"></i> @item.AuthorName
-								<i class="fa fa-comment"></i> <a href="#">@item.ReviewId</a>
-							</p>
-							<a href="blog-post.html" class="img-post">
-								<img src="~/img/@item.Picture" alt="post 2" class="img-responsive">
-							</a>
-							<p>
-
-								@if (@item.Content.Length > 100)
-								{
-									@(item.Content.Substring(0, 95) + "...")
-								}
-								else
-								{
-									@item.Content
-
-								}
-
-							</p>
-							<a class="btn btn-primary" href="/Content/review_id_@item.ReviewId">Read More <i class="fa fa-angle-right"></i></a>
-						</div><!-- /.post -->
-					</div>
-				</div>
-
-			}
-
-		</div>
-
-
-	</div>
-
-	*@
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="jd/jquery.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.dataTables.min.js"></script>
-<script src="js/dataTables.bootstrap.min.js"></script>
 <script>
-	$('#mydata').datatables();
+    $('#mydata').datatables();
 </script>
