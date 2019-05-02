@@ -1,4 +1,5 @@
 ﻿using BookPortal.Models;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -7,9 +8,9 @@ namespace BookPortal.Controllers
 	public class HomeController : Controller
 	{
 		private readonly RevDBEntities db = new RevDBEntities();
-        private ReviewsContext context = new ReviewsContext();
+		private readonly ReviewsContext context = new ReviewsContext();
 
-        private readonly ReviewContext _db;
+		private readonly ReviewContext _db;
 		public HomeController(ReviewContext db)
 		{
 			_db = db;
@@ -21,8 +22,64 @@ namespace BookPortal.Controllers
 		// GET: Home
 		public ActionResult Index()
 		{
-			return View();
+			List<Review> reviewList = GetReviewsList();
+			//List<ReviewsDB> reviewVisual = GetReviewsVisual();
+
+			//MergeModels merge = new MergeModels
+			//{
+			//	ListModel = reviewList,
+			//	VisualModel = reviewVisual
+			//};
+
+			//return View(merge);
+			return View(reviewList.ToList());
 		}
+
+		private List<ReviewsDB> GetReviewsVisual()
+		{
+			IQueryable<ReviewsDB> reviews = from m in context.Reviews
+											select m;
+			return reviews.ToList();
+		}
+
+		private List<Review> GetReviewsList()
+		{
+			IQueryable<Review> reviews = from m in db.Reviews
+										 select m;
+			//return View(reviews.ToList());
+			return reviews.ToList();
+		}
+		/*
+		private object RandomElement<T>(this IEnumerable<T> review,
+								 Random rng)
+		{
+			T current = default(T);
+			int count = 0;
+			foreach (T element in review)
+			{
+				count++;
+				if (rng.Next(count) == 0)
+				{
+					current = element;
+				}
+			}
+			if (count == 0)
+			{
+				throw new InvalidOperationException("Sequence was empty");
+			}
+			return current;
+		}
+		*/
+		/*
+		private List<Review> GetRandom()
+		{
+			IOrderedEnumerable<Review> res = (from m in db.Reviews.AsEnumerable()
+											  orderby Guid.NewGuid()
+											  select m).Take(3);
+
+			return res.ToList();
+		}
+		*/
 		public ActionResult TopReviews()
 		{
 			return View(db.Reviews.ToList());
@@ -78,27 +135,28 @@ namespace BookPortal.Controllers
 		//}
 		public ActionResult CategoryScienceFiction()
 		{
-			return View(context.Reviews.ToList());
+			return View(db.Reviews.ToList());
 		}
 		public ActionResult CategoryGuide()
 		{
-			return View(context.Reviews.ToList());
+			return View(db.Reviews.ToList());
 		}
 		public ActionResult CategoryDiaries()
 		{
-			return View(context.Reviews.ToList());
+			return View(db.Reviews.ToList());
 		}
 		public ActionResult CategoryJournals()
 		{
-			return View(context.Reviews.ToList());
+			return View(db.Reviews.ToList());
 		}
 		public ActionResult CategoryDrama()
 		{
-			return View(context.Reviews.ToList());
+			return View(db.Reviews.ToList());
 		}
 		public ActionResult CategoryArt()
 		{
-			return View(context.Reviews.ToList());
+			//return View(context.Reviews.ToList());
+			return View(db.Reviews.ToList());
 		}
 
 

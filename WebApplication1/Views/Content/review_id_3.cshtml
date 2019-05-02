@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-md-8 col-sm-8">
                 <div class="post">
-                    <h1 class="post-title"><a href="blog-post.html">@item.BookSubject</a></h1>
+                    <h1 class="post-title">@item.BookSubject</h1>
                     <p class="post-meta">
                         <i class="fa fa-calendar-o first"></i> @item.UploadDate
                         <i class="fa fa-user"></i> Admin
@@ -33,21 +33,8 @@
                     <div class="img-post">
                         <img src="~/img/@item.Picture" alt="post 1" class="img-responsive">
                     </div>
-                    <p>@item.Content</p>
-                    @*<p>Praesent convallis a risus eget cursus. Phasellus ultrices laoreet lacus semper cursus. Nam vitae luctus sapien, a hendrerit nunc. Fusce sed sem bibendum, porta quam et, ornare urna. Sed rutrum eros libero, eget rutrum mi interdum eget. Quisque imperdiet consectetur turpis vel scelerisque. Vivamus consectetur pretium libero vel condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer laoreet enim vitae justo gravida mattis.</p>
-                        <p>Nullam pellentesque tempus erat id congue. Fusce vestibulum, tortor ac fringilla molestie, turpis turpis adipiscing sem, at luctus justo risus nec arcu. Aenean at lorem condimentum, mollis eros nec, mattis lectus. Donec ut elit non massa tristique imperdiet nec vitae dui. Pellentesque ac pharetra arcu. Vestibulum vitae purus et turpis feugiat ultrices et tempor sem. Ut et nisi nec dolor facilisis sodales. Praesent ornare tellus ut metus rutrum tempus. Cras luctus pharetra pharetra. In vel nulla condimentum ligula convallis congue. Suspendisse quis tortor sit amet lorem tincidunt tristique nec ut enim. Morbi tortor ipsum, tristique ut blandit non, lacinia non nibh. Fusce eget augue odio.</p>*@
-                </div><!-- /.post -->
-                <!-- the comment box -->
-                <div class="well">
-                    <h4>Leave a Comment:</h4>
-                    <form role="form">
-                        <div class="form-group">
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-
+                    <p>@item.Content</p>                    
+                </div><!-- /.post -->                
                 <hr>
             </div>
         </div>
