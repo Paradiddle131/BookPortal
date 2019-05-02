@@ -20,6 +20,7 @@
         public bool Confirmation { get; set; }
         public string OtherBooks { get; set; }
         public bool MainPage { get; set; }
+        public string Status { get; set; }
 
         public int CategoryId { get; set; }
         public CategoriesDB Categories { get; set; }

@@ -395,7 +395,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.html" />
     <Content Include="fonts\glyphicons-halflings-regulard41d.html" />
     <Content Include="img\blood.jpg" />
-    <Content Include="img\carmilla.jpg" />
     <Content Include="img\client-1.png" />
     <Content Include="img\client-2.png" />
     <Content Include="img\client-3.png" />
@@ -414,8 +413,8 @@
     <Content Include="img\desertsnow.jpg" />
     <Content Include="img\eternity.jpg" />
     <Content Include="img\hardtimes.jpg" />
-    <Content Include="img\kidnapped.jpg" />
     <Content Include="img\modernınstance.jpg" />
+    <Content Include="img\murders.jpg" />
     <Content Include="img\nile.jpg" />
     <Content Include="img\pharaohs.jpg" />
     <Content Include="img\post2.png" />
@@ -425,6 +424,7 @@
     <Content Include="img\slide\slide1.png" />
     <Content Include="img\slide\slide2.png" />
     <Content Include="img\slide\slide3.png" />
+    <Content Include="img\threesoldiers.jpg" />
     <Content Include="js\bookp.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\jquery-1.10.2.js" />
