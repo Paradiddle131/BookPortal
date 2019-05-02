@@ -520,7 +520,6 @@ D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Xml.ReaderWriter.d
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Xml.XmlDocument.dll
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Xml.XPath.dll
 D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\bin\System.Xml.XPath.XDocument.dll
-D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\obj\Debug\BookPortal.csprojAssemblyReference.cache
 C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\BookPortal.dll.config
 C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\BookPortal.dll
 C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\bin\BookPortal.pdb
@@ -601,3 +600,4 @@ C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.csp
 C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.dll
 C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.pdb
 C:\Users\Tolga\Documents\Git\BookPortal\WebApplication1\obj\Debug\BookPortal.csprojAssemblyReference.cache
+D:\PROJECTS\ASP.NET MVC\BookPortal\WebApplication1\obj\Debug\BookPortal.csprojAssemblyReference.cache
